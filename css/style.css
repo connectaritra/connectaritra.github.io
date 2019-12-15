@@ -12,10 +12,22 @@ li {
 }
 
 body {
-    font-family: 'Open Sans', sans-serif;
+
     margin: 0;
     padding: 0;
 }
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+
+
+
+
+
 
 /*particles*/
 #particles-js {
@@ -126,7 +138,7 @@ body {
 }
 
 .mob-menu ul li {
-    border-bottom: 1px solid #ffffff;
+    border-bottom: 1px solid #aaa;
     list-style-type: none;
     padding: 20px 0;
     display: block;
@@ -134,16 +146,14 @@ body {
 }
 
 .mob-menu ul li a {
-    color: #fff;
-    font-size: 22px;
-    font-family: 'Josefin Slab', serif;
+    color: #eee;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
     text-decoration: none;
 }
 
-.mob-menu ul li a:hover {
-    font-weight: 800;
-    text-shadow: 1px 0 1px #035aff;
-}
+
 
 .site-nav-icon {
     display: none;
@@ -157,15 +167,15 @@ body {
 
 .progress-container {
     width: 100%;
-    height: 8px;
+    height: 5px;
     background: #ccc;
     position: fixed;
     z-index: 99;
 }
 
 .progress-bar {
-    height: 8px;
-    background: #0a21cc;
+    height: 5px;
+    background: #000;
     width: 0%;
 }
 
@@ -178,34 +188,51 @@ body {
 .test-background {
     height: 100vh;
 }
+
 .site-header {
     padding-top: 40px;
-    background: url(images/back3.jpg);
+    background: url(../images/back3.jpg);
     background-attachment: fixed;
     height: 100vh;
+    width: 100%;
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
 }
 
-.site-header h1 a {
+#home-svg {
+    height: 150px;
+    width: 100vw;
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    z-index: 3;
+}
+
+#home-svg .p-curve {
+    fill: #000;
+}
+
+.site-header h1 {
+    font-size: 22px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
     color: #fff;
-    font-family: 'Berkshire Swash', cursive;
-    font-size: 50px;
-    text-decoration: none;
-    text-shadow: 1px 0 1px #035aff;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .site-header .head-link a {
-    color: #fff;
-    font-size: 22px;
+    color: #aaa;
+    font-size: 16px;
     display: inline-block;
     margin-left: 40px;
     text-decoration: none;
-    font-family: 'Josefin Slab', serif;
-    font-weight: 800;
-    letter-spacing: 2px;
-    transition: 2s;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: 0.5s;
 }
 
 .site-header .head-link a:first-child {
@@ -213,34 +240,23 @@ body {
 }
 
 .site-header .head-link a:hover {
-    color: #0381ff;
+    color: #fff;
 }
 
 /* end site header */
 
 
+
+
+
+
+
+
+
+
+
 /* start site background */
-.site-background .head-link {
-    text-align: center;
-    margin-top: 10px;
-}
 
-.site-background .head-link a {
-    color: #fff;
-    font-size: 30px;
-    display: inline-block;
-    margin-left: 50px;
-    transition: 1s;
-}
-
-.site-background .head-link a:first-child {
-    margin-left: 0px;
-}
-
-.site-background .head-link a:hover {
-    color: #035aff;
-    transform: rotate(360deg);
-}
 
 .site-background .name {
     position: absolute;
@@ -250,18 +266,15 @@ body {
 }
 
 .site-background .name h2 {
-    font-size: 100px;
+    font-size: 80px;
+    font-weight: 900;
     color: #fff;
-    font-family: 'Risque', cursive;
-    margin-bottom: 20px;
-    text-shadow: 5px 0 5px #000;
     text-align: center;
 }
 
 .site-background .name h6 {
     font-size: 25px;
-    color: #fff;
-    font-family: 'Josefin Slab', serif;
+    color: #eee;
     text-align: center;
     margin-bottom: 40px;
 }
@@ -270,126 +283,307 @@ body {
     color: #fff;
     font-size: 40px;
     font-weight: 600;
-    font-family: 'Josefin Slab', serif;
+
     text-align: center;
     margin-bottom: 40px;
+}
+
+#typed {
+    white-space: pre;
+    font-size: 24px;
+    font-family: "Raleway", sans-serif;
+    color: #eee;
 }
 
 /* end site background */
 
 
 
-/* start projects*/
-.my-projects {
-    padding: 50px 0;
-    background: #c4c4c4;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*------------------start About Section ---------------*/
+section.about {
+    padding: 10rem 0;
+    background-color: #000
 }
 
-.my-projects h3 {
-    font-size: 70px;
-    text-align: center;
-    font-family: 'Fredericka the Great', cursive;
-    margin-bottom: 20px;
-}
-
-.my-projects p {
-    font-size: 30px;
-    text-align: center;
-    margin-bottom: 30px;
-    font-family: 'IM Fell French Canon SC', serif;
-}
-
-.p-view img {
-    width: 100%;
-    transform: scale(1);
-    transition: all 2s;
-}
-
-.p-view:hover img {
-    transform: scale(1.1);
-    transition: all 2s;
-}
-
-.p-view {
+section.about .about-img {
     position: relative;
-    display: block;
-    overflow: hidden;
 }
 
-.p-view:hover .view {
-    display: block;
-}
-
-.my-projects .view {
-    background: rgba(0, 0, 0, 0.5);
-    height: 100%;
+section.about .about-img:before {
+    content: "";
+    background-color: #222;
     width: 100%;
+    height: 100%;
     position: absolute;
-    top: 0;
-    left: 0;
-    padding-top: 140px;
-    display: none;
+    bottom: -10%;
+    left: -10%;
+    z-index: 0;
 }
 
-.my-projects h2 {
-    color: #fff;
-    font-size: 80px;
-    text-align: center;
-    font-family: 'Black And White Picture', sans-serif;
-    letter-spacing: 5px;
+section.about .about-img img {
+    position: relative;
+    width: 100%;
+    z-index: 1;
+    -webkit-box-shadow: 0 0 85px 0 rgba(0, 0, 0, 0.14);
+    box-shadow: 0 0 85px 0 rgba(0, 0, 0, 0.14);
 }
 
-/*about me*/
-.about-me {
-    padding: 50px 0;
-    text-align: center;
-}
-
-.about-me .about-pera1 {
-    margin-bottom: 80px;
-    font-size: 30px;
-}
-
-.about-me h3 {
-    font-size: 50px;
-    text-align: center;
-    font-family: 'Fredericka the Great', cursive;
+section.about .about-content .about-heading {
     margin-bottom: 20px;
 }
 
-.about-me p {
+section.about .about-content .about-heading h2 {
+    font-size: 32px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+section.about .about-content .about-heading span {
+    font-family: "Raleway", sans-serif;
+    color: #fff;
+    font-size: 19px;
+}
+
+section.about .about-content p {
+    line-height: 28px;
+    color: #eee;
+}
+
+section.about .about-content .social-icons {
+    margin-top: 30px;
+}
+
+section.about .about-content .social-icons a {
+    display: inline-block;
+    font-size: 15px;
+    line-height: 26px;
+    text-align: center;
+    margin-right: 10px;
+    background-color: #222;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    border: 2px solid #222;
+    width: 30px;
+    height: 30px;
+    -webkit-transition: .2s all ease;
+    -o-transition: .2s all ease;
+    transition: .2s all ease;
+}
+
+section.about .about-content .social-icons a .fa {
+    color: #aaa;
+    -webkit-transition: .2s all ease;
+    -o-transition: .2s all ease;
+    transition: .2s all ease;
+}
+
+section.about .about-content .social-icons a:hover {
+    border: 2px solid #222;
+    background: transparent;
+    line-height: 26px;
+}
+
+section.about .about-content .social-icons a:hover .fa {
+    color: #fff;
+}
+
+
+
+section.about .main-btn {
+    display: inline-block;
+    background-color: #eee;
+    padding: 10px 20px;
+    border: 2px solid #eee;
+    color: #222;
+    text-transform: uppercase;
+    -webkit-transition: .2s background-color ease;
+    -o-transition: .2s background-color ease;
+    transition: .2s background-color ease;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 50px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+section.about .main-btn:hover {
+    color: #eee;
+    border: 2px solid #222;
+    background-color: #222;
+}
+
+/*------------------end About Section ---------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--------------------------------start blog-------------------------*/
+.blog-section {
+    background-color: #212121;
+    padding: 5rem 0;
+}
+
+.blog-section h4 {
+    color: #eee;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.blog-section h2 {
+    color: #eee;
+    font-size: 32px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    letter-spacing: 1px;
+}
+.blog-section .card {
+	position: relative;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	min-width: 0;
+	word-wrap: break-word;
+	background-color: #fff;
+	background-clip: border-box;
+	 border: none; 
+	border-radius: .25rem;
+}
+.blog-section .card-body {
+	-ms-flex: 1 1 auto;
+	flex: 1 1 auto;
+	min-height: 1px;
+	padding: 1.25rem;
+	background-color: #111;
+}
+.blog-section .card-body p {
+	color: #eee;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*site-footer*/
+.site-footer {
+    padding: 50px 0 0 0;
+    text-align: center;
+    background-color: #212121;
+}
+
+.site-footer .about-pera1 {
+    font-size: 16px;
+    font-weight: 500;
+    color: #eee;
+    letter-spacing: 1px;
+}
+
+.site-footer h3 {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    color: #eee;
+    letter-spacing: 2px;
+}
+
+.site-footer p {
     font-size: 20px;
     text-align: center;
-    font-family: 'IM Fell French Canon SC', serif;
+    color: #fff;
 }
 
-.about-me h2 {
-    font-family: 'Meddon', cursive;
-    font-size: 50px;
-    transform: rotate(-28deg);
-    margin-bottom: 50px;
-}
-
-.about-me h4 {
-    font-size: 25px;
-    margin-bottom: 10px;
-}
-
-.about-me h5 {
-    font-size: 18px;
-    margin-bottom: 20px;
-}
 
 .tagline {
-    background-color: #242424;
-    padding: 10px 0;
+    background-color: #000;
+    padding: 20px 0;
 }
 
 .tagline h6 {
-    color: #fff;
+    color: #aaa;
     text-align: center;
-    font-size: 20px;
+    font-size: 12px;
+    letter-spacing: 1px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*start media query*/
 @media only screen and (max-width: 1199px) {
@@ -439,41 +633,20 @@ body {
         font-weight: 800;
     }
 
-    .my-projects {
-        padding: 40px 0;
-    }
 
-    .my-projects h3 {
-        font-size: 40px;
-    }
-
-    .my-projects p {
-        font-size: 25px;
-        margin-bottom: 20px;
-    }
-
-    .about-me {
+    .site-footer {
         padding: 50px 0;
         text-align: center;
     }
 
-    .about-me h3 {
+    .site-footer h3 {
         font-size: 40px;
     }
 
-    .about-me p {
+    .site-footer p {
         font-size: 18px;
     }
 
-    .about-me h4 {
-        font-size: 25px;
-        margin-bottom: 10px;
-    }
-
-    .about-me h5 {
-        font-size: 18px;
-        margin-bottom: 20px;
-    }
 }
 
 @media only screen and (max-width: 767px) {
@@ -499,7 +672,7 @@ body {
         font-size: 20px !important;
     }
 
-    .about-me .about-pera1 {
+    .site-footer .about-pera1 {
         margin-bottom: 80px;
         font-size: 20px;
     }
@@ -527,48 +700,17 @@ body {
         font-size: 18px;
     }
 
-    .my-projects {
+
+    .site-footer {
         padding: 40px 0;
     }
 
-    .my-projects h3 {
+    .site-footer h3 {
         font-size: 30px;
     }
 
-    .my-projects p {
-        font-size: 20px;
-        margin-bottom: 20px;
-    }
-
-    .about-me {
-        padding: 40px 0;
-    }
-
-    .about-me h3 {
-        font-size: 30px;
-    }
-
-    .about-me p {
+    .site-footer p {
         font-size: 15px;
     }
 
-    .about-me h4 {
-        font-size: 20px;
-    }
-
-    .about-me h5 {
-        font-size: 15px;
-    }
-
-    .about-me h2 {
-        font-size: 40px;
-    }
-
-    .my-projects .view {
-        padding-top: 80px;
-    }
-
-    .my-projects h2 {
-        font-size: 50px;
-    }
 }
