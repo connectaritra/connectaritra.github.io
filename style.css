@@ -1,0 +1,574 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/*particles*/
+#particles-js {
+    height: 100%;
+    background-color: transparent;
+}
+
+
+
+
+
+
+
+/*typed option*/
+.type-wrap {
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+/*start pre loader*/
+.spinner {
+    width: 50px;
+    height: 50px;
+    background-color: #035aff;
+
+    position: absolute;
+    top: 48%;
+    left: 48%;
+    -webkit-animation: sk-rotateplane 1.2s infinite ease-in-out;
+    animation: sk-rotateplane 1.2s infinite ease-in-out;
+}
+
+.spinner-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    z-index: 999999;
+}
+
+@-webkit-keyframes sk-rotateplane {
+    0% {
+        -webkit-transform: perspective(120px)
+    }
+
+    50% {
+        -webkit-transform: perspective(120px) rotateY(180deg)
+    }
+
+    100% {
+        -webkit-transform: perspective(120px) rotateY(180deg) rotateX(180deg)
+    }
+}
+
+@keyframes sk-rotateplane {
+    0% {
+        transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+        -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg)
+    }
+
+    50% {
+        transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+        -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg)
+    }
+
+    100% {
+        transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+        -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+    }
+}
+
+/*end pre loader*/
+
+/* start mobile header */
+.site-nav-icon i {
+    color: #fff;
+}
+
+.mob-menu ul {
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 108px;
+    right: 0;
+    z-index: 9;
+}
+
+.mob-menu ul li:nth-child(odd) {
+    background: #171616;
+}
+
+.mob-menu ul li:nth-child(even) {
+    background: #272727;
+}
+
+.mob-menu ul li:last-child {
+    border-bottom: none;
+}
+
+.mob-menu ul li {
+    border-bottom: 1px solid #ffffff;
+    list-style-type: none;
+    padding: 20px 0;
+    display: block;
+    width: 100%;
+}
+
+.mob-menu ul li a {
+    color: #fff;
+    font-size: 22px;
+    font-family: 'Josefin Slab', serif;
+    text-decoration: none;
+}
+
+.mob-menu ul li a:hover {
+    font-weight: 800;
+    text-shadow: 1px 0 1px #035aff;
+}
+
+.site-nav-icon {
+    display: none;
+}
+
+.mob-dropmenu {
+    display: none;
+}
+
+/* end mobile header */
+
+.progress-container {
+    width: 100%;
+    height: 8px;
+    background: #ccc;
+    position: fixed;
+    z-index: 99;
+}
+
+.progress-bar {
+    height: 8px;
+    background: #0a21cc;
+    width: 0%;
+}
+
+
+
+
+
+
+/*start site header */
+.test-background {
+    height: 100vh;
+}
+.site-header {
+    padding-top: 40px;
+    background: url(images/back3.jpg);
+    background-attachment: fixed;
+    height: 100vh;
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+}
+
+.site-header h1 a {
+    color: #fff;
+    font-family: 'Berkshire Swash', cursive;
+    font-size: 50px;
+    text-decoration: none;
+    text-shadow: 1px 0 1px #035aff;
+}
+
+.site-header .head-link a {
+    color: #fff;
+    font-size: 22px;
+    display: inline-block;
+    margin-left: 40px;
+    text-decoration: none;
+    font-family: 'Josefin Slab', serif;
+    font-weight: 800;
+    letter-spacing: 2px;
+    transition: 2s;
+}
+
+.site-header .head-link a:first-child {
+    margin-left: 0px;
+}
+
+.site-header .head-link a:hover {
+    color: #0381ff;
+}
+
+/* end site header */
+
+
+/* start site background */
+.site-background .head-link {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.site-background .head-link a {
+    color: #fff;
+    font-size: 30px;
+    display: inline-block;
+    margin-left: 50px;
+    transition: 1s;
+}
+
+.site-background .head-link a:first-child {
+    margin-left: 0px;
+}
+
+.site-background .head-link a:hover {
+    color: #035aff;
+    transform: rotate(360deg);
+}
+
+.site-background .name {
+    position: absolute;
+    top: -600px;
+    left: 0;
+    right: 0;
+}
+
+.site-background .name h2 {
+    font-size: 100px;
+    color: #fff;
+    font-family: 'Risque', cursive;
+    margin-bottom: 20px;
+    text-shadow: 5px 0 5px #000;
+    text-align: center;
+}
+
+.site-background .name h6 {
+    font-size: 25px;
+    color: #fff;
+    font-family: 'Josefin Slab', serif;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.site-background .name h3 {
+    color: #fff;
+    font-size: 40px;
+    font-weight: 600;
+    font-family: 'Josefin Slab', serif;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* end site background */
+
+
+
+/* start projects*/
+.my-projects {
+    padding: 50px 0;
+    background: #c4c4c4;
+}
+
+.my-projects h3 {
+    font-size: 70px;
+    text-align: center;
+    font-family: 'Fredericka the Great', cursive;
+    margin-bottom: 20px;
+}
+
+.my-projects p {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 30px;
+    font-family: 'IM Fell French Canon SC', serif;
+}
+
+.p-view img {
+    width: 100%;
+    transform: scale(1);
+    transition: all 2s;
+}
+
+.p-view:hover img {
+    transform: scale(1.1);
+    transition: all 2s;
+}
+
+.p-view {
+    position: relative;
+    display: block;
+    overflow: hidden;
+}
+
+.p-view:hover .view {
+    display: block;
+}
+
+.my-projects .view {
+    background: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-top: 140px;
+    display: none;
+}
+
+.my-projects h2 {
+    color: #fff;
+    font-size: 80px;
+    text-align: center;
+    font-family: 'Black And White Picture', sans-serif;
+    letter-spacing: 5px;
+}
+
+/*about me*/
+.about-me {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.about-me .about-pera1 {
+    margin-bottom: 80px;
+    font-size: 30px;
+}
+
+.about-me h3 {
+    font-size: 50px;
+    text-align: center;
+    font-family: 'Fredericka the Great', cursive;
+    margin-bottom: 20px;
+}
+
+.about-me p {
+    font-size: 20px;
+    text-align: center;
+    font-family: 'IM Fell French Canon SC', serif;
+}
+
+.about-me h2 {
+    font-family: 'Meddon', cursive;
+    font-size: 50px;
+    transform: rotate(-28deg);
+    margin-bottom: 50px;
+}
+
+.about-me h4 {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.about-me h5 {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.tagline {
+    background-color: #242424;
+    padding: 10px 0;
+}
+
+.tagline h6 {
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+}
+
+/*start media query*/
+@media only screen and (max-width: 1199px) {
+    .site-background .name {
+        position: absolute;
+        top: -400px;
+    }
+
+    .site-background .name h2 {
+        font-size: 60px;
+        margin-bottom: 20px;
+        text-shadow: 4px 0 4px #000;
+    }
+
+    .site-background .name h6 {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    .site-background .name h3 {
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .site-background .name {
+        position: absolute;
+        top: -350px;
+    }
+
+    .site-background .name h2 {
+        font-size: 50px;
+    }
+
+    .site-background .name h3 {
+        font-size: 25px;
+    }
+
+    .site-background .name i {
+        font-size: 20px;
+    }
+
+    .site-header .head-link a {
+        font-size: 20px;
+        margin-left: 25px;
+        font-weight: 800;
+    }
+
+    .my-projects {
+        padding: 40px 0;
+    }
+
+    .my-projects h3 {
+        font-size: 40px;
+    }
+
+    .my-projects p {
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
+
+    .about-me {
+        padding: 50px 0;
+        text-align: center;
+    }
+
+    .about-me h3 {
+        font-size: 40px;
+    }
+
+    .about-me p {
+        font-size: 18px;
+    }
+
+    .about-me h4 {
+        font-size: 25px;
+        margin-bottom: 10px;
+    }
+
+    .about-me h5 {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .site-nav-icon {
+        display: block;
+        float: right;
+        margin: 20px 0;
+        cursor: pointer;
+        font-size: 24px;
+    }
+
+    .header-menu {
+        display: none;
+    }
+
+    .site-background .name {
+        position: absolute;
+        top: -250px;
+    }
+
+    #typed,
+    .typed-cursor {
+        font-size: 20px !important;
+    }
+
+    .about-me .about-pera1 {
+        margin-bottom: 80px;
+        font-size: 20px;
+    }
+
+    .tagline h6 {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .site-background .name {
+        position: absolute;
+        top: -150px;
+    }
+
+    .site-background .name h2 {
+        font-size: 40px;
+    }
+
+    .site-background .name h3 {
+        font-size: 20px;
+    }
+
+    .site-background .name i {
+        font-size: 18px;
+    }
+
+    .my-projects {
+        padding: 40px 0;
+    }
+
+    .my-projects h3 {
+        font-size: 30px;
+    }
+
+    .my-projects p {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    .about-me {
+        padding: 40px 0;
+    }
+
+    .about-me h3 {
+        font-size: 30px;
+    }
+
+    .about-me p {
+        font-size: 15px;
+    }
+
+    .about-me h4 {
+        font-size: 20px;
+    }
+
+    .about-me h5 {
+        font-size: 15px;
+    }
+
+    .about-me h2 {
+        font-size: 40px;
+    }
+
+    .my-projects .view {
+        padding-top: 80px;
+    }
+
+    .my-projects h2 {
+        font-size: 50px;
+    }
+}
