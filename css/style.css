@@ -58,8 +58,7 @@ html {
 .spinner {
     width: 50px;
     height: 50px;
-    background-color: #035aff;
-
+    background-color: #000;
     position: absolute;
     top: 48%;
     left: 48%;
@@ -184,7 +183,7 @@ html {
 
 
 
-/*start site header */
+/*--------------------------------start site header----------------------------- */
 .test-background {
     height: 100vh;
 }
@@ -243,7 +242,7 @@ html {
     color: #fff;
 }
 
-/* end site header */
+/*---------------------------- end site header---------------------- */
 
 
 
@@ -255,9 +254,7 @@ html {
 
 
 
-/* start site background */
-
-
+/*--------------------------- start site background -------------------------------------*/
 .site-background .name {
     position: absolute;
     top: -600px;
@@ -295,7 +292,16 @@ html {
     color: #eee;
 }
 
-/* end site background */
+/*start media query*/
+@media only screen and (max-width: 1199px) {}
+
+@media only screen and (max-width: 991px) {}
+
+@media only screen and (max-width: 767px) {}
+
+@media only screen and (max-width: 575px) {}
+
+/*-------------------------------- end site background ----------------------*/
 
 
 
@@ -433,12 +439,88 @@ section.about .main-btn:hover {
     background-color: #222;
 }
 
+
+
+/*start media query*/
+@media only screen and (max-width: 1199px) {}
+
+@media only screen and (max-width: 991px) {}
+
+@media only screen and (max-width: 767px) {
+    section.about .about-content .about-heading {
+        margin-top: 50px;
+    }
+}
+
+@media only screen and (max-width: 575px) {}
+
 /*------------------end About Section ---------------*/
 
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*----------------------------start numscroller--------------------------*/
+.stats {
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    overflow: hidden;
+    padding: 4rem 0;
+}
+
+.stats .single-stat {
+    text-align: center;
+    color: #fff;
+    z-index: 10;
+    position: relative;
+}
+
+.stats .single-stat h2 {
+    color: #fff;
+    font-weight: 800;
+}
+
+.stats .single-stat p {
+    font-weight: 600;
+    margin-bottom: 30px;
+    color: #fff;
+}
+
+.stats .single-stat .stat-icon .fa {
+    font-size: 30px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom: 3px solid #fff;
+}
+
+
+/*start media query*/
+@media only screen and (max-width: 1199px) {}
+
+@media only screen and (max-width: 991px) {}
+
+@media only screen and (max-width: 767px) {}
+
+@media only screen and (max-width: 575px) {}
 
 
 
@@ -485,31 +567,59 @@ section.about .main-btn:hover {
     margin-bottom: 40px;
     letter-spacing: 1px;
 }
+
 .blog-section .card {
-	position: relative;
-	display: -ms-flexbox;
-	display: flex;
-	-ms-flex-direction: column;
-	flex-direction: column;
-	min-width: 0;
-	word-wrap: break-word;
-	background-color: #fff;
-	background-clip: border-box;
-	 border: none; 
-	border-radius: .25rem;
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: none;
+    border-radius: .25rem;
 }
+
 .blog-section .card-body {
-	-ms-flex: 1 1 auto;
-	flex: 1 1 auto;
-	min-height: 1px;
-	padding: 1.25rem;
-	background-color: #111;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    min-height: 1px;
+    padding: 1.25rem;
+    background-color: #111;
+    height: 6rem;
 }
+
 .blog-section .card-body p {
-	color: #eee;
+    color: #eee;
     text-align: center;
     letter-spacing: 1px;
 }
+
+
+
+/*start media query*/
+@media only screen and (max-width: 1199px) {}
+
+@media only screen and (max-width: 991px) {}
+
+@media only screen and (max-width: 767px) {
+    .blog-section .card {
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width: 575px) {}
+
+/*--------------------------------start blog-------------------------*/
+
+
+
+
+
+
+
 
 
 
