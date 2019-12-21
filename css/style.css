@@ -17,16 +17,9 @@ body {
     padding: 0;
 }
 
-
 html {
     scroll-behavior: smooth;
 }
-
-
-
-
-
-
 
 
 /*particles*/
@@ -37,18 +30,10 @@ html {
 
 
 
-
-
-
-
 /*typed option*/
 .type-wrap {
     text-align: center;
 }
-
-
-
-
 
 
 
@@ -109,6 +94,8 @@ html {
 
 /*end pre loader*/
 
+
+
 /* start mobile header */
 .site-nav-icon i {
     color: #fff;
@@ -152,8 +139,6 @@ html {
     text-decoration: none;
 }
 
-
-
 .site-nav-icon {
     display: none;
 }
@@ -163,6 +148,8 @@ html {
 }
 
 /* end mobile header */
+
+
 
 .progress-container {
     width: 100%;
@@ -183,7 +170,7 @@ html {
 
 
 
-/*--------------------------------start site header----------------------------- */
+/*--start site header--*/
 .test-background {
     height: 100vh;
 }
@@ -242,7 +229,7 @@ html {
     color: #fff;
 }
 
-/*---------------------------- end site header---------------------- */
+/*--end site header--*/
 
 
 
@@ -254,7 +241,7 @@ html {
 
 
 
-/*--------------------------- start site background -------------------------------------*/
+/*--start site background--*/
 .site-background .name {
     position: absolute;
     top: -600px;
@@ -301,7 +288,7 @@ html {
 
 @media only screen and (max-width: 575px) {}
 
-/*-------------------------------- end site background ----------------------*/
+/*--end site background--*/
 
 
 
@@ -323,7 +310,7 @@ html {
 
 
 
-/*------------------start About Section ---------------*/
+/*--start About Section--*/
 section.about {
     padding: 10rem 0;
     background-color: #000
@@ -413,8 +400,6 @@ section.about .about-content .social-icons a:hover .fa {
     color: #fff;
 }
 
-
-
 section.about .main-btn {
     display: inline-block;
     background-color: #eee;
@@ -454,28 +439,14 @@ section.about .main-btn:hover {
 
 @media only screen and (max-width: 575px) {}
 
-/*------------------end About Section ---------------*/
+/*--end About Section--*/
 
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*----------------------------start numscroller--------------------------*/
+/*--start numscroller--*/
 .stats {
     -webkit-background-size: cover;
     background-size: cover;
@@ -512,7 +483,6 @@ section.about .main-btn:hover {
     border-bottom: 3px solid #fff;
 }
 
-
 /*start media query*/
 @media only screen and (max-width: 1199px) {}
 
@@ -531,20 +501,7 @@ section.about .main-btn:hover {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*--------------------------------start blog-------------------------*/
+/*--start blog--*/
 .blog-section {
     background-color: #212121;
     padding: 5rem 0;
@@ -597,8 +554,6 @@ section.about .main-btn:hover {
     letter-spacing: 1px;
 }
 
-
-
 /*start media query*/
 @media only screen and (max-width: 1199px) {}
 
@@ -612,7 +567,7 @@ section.about .main-btn:hover {
 
 @media only screen and (max-width: 575px) {}
 
-/*--------------------------------start blog-------------------------*/
+/*--start blog--*/
 
 
 
@@ -637,7 +592,7 @@ section.about .main-btn:hover {
 
 
 
-/*site-footer*/
+/*--site-footer--*/
 .site-footer {
     padding: 50px 0 0 0;
     text-align: center;
@@ -678,19 +633,6 @@ section.about .main-btn:hover {
     font-size: 12px;
     letter-spacing: 1px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -822,5 +764,4 @@ section.about .main-btn:hover {
     .site-footer p {
         font-size: 15px;
     }
-
 }
