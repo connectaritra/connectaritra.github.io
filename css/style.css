@@ -602,7 +602,9 @@ section.about .main-btn:hover {
     background: #000;
     opacity: .7;
 }
-
+.hire-me .freelance {
+    
+}
 .hire-me h2 {
     color: #fff;
     font-size: 40px;
@@ -644,7 +646,12 @@ section.about .main-btn:hover {
     border: 2px solid #222;
     background-color: #222;
 }
-
+/*start media query*/
+@media only screen and (max-width: 992px) {
+    .linkedin-profile {
+        margin-top: 2rem;
+    }
+}
 
 
 
@@ -716,26 +723,6 @@ section.about .main-btn:hover {
         font-size: 20px;
     }
 
-    .site-header .head-link a {
-        font-size: 20px;
-        margin-left: 25px;
-        font-weight: 800;
-    }
-
-
-    .site-footer {
-        padding: 50px 0;
-        text-align: center;
-    }
-
-    .site-footer h3 {
-        font-size: 40px;
-    }
-
-    .site-footer p {
-        font-size: 18px;
-    }
-
 }
 
 @media only screen and (max-width: 767px) {
@@ -761,11 +748,6 @@ section.about .main-btn:hover {
         font-size: 20px !important;
     }
 
-    .site-footer .about-pera1 {
-        margin-bottom: 80px;
-        font-size: 20px;
-    }
-
     .tagline h6 {
         font-size: 14px;
     }
@@ -789,16 +771,4 @@ section.about .main-btn:hover {
         font-size: 18px;
     }
 
-
-    .site-footer {
-        padding: 40px 0;
-    }
-
-    .site-footer h3 {
-        font-size: 30px;
-    }
-
-    .site-footer p {
-        font-size: 15px;
-    }
 }
