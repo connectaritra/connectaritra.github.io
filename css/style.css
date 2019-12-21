@@ -344,11 +344,12 @@ section.about .about-content .about-heading {
 }
 
 section.about .about-content .about-heading h2 {
-    font-size: 32px;
-    font-weight: 600;
+    font-size: 40px;
+    font-weight: 700;
     text-transform: uppercase;
-    color: #fff;
+    color: #aaa;
     letter-spacing: 1px;
+    margin-bottom: 5px;
 }
 
 section.about .about-content .about-heading span {
@@ -401,21 +402,22 @@ section.about .about-content .social-icons a:hover .fa {
 }
 
 section.about .main-btn {
-    display: inline-block;
-    background-color: #eee;
-    padding: 10px 20px;
-    border: 2px solid #eee;
-    color: #222;
-    text-transform: uppercase;
-    -webkit-transition: .2s background-color ease;
-    -o-transition: .2s background-color ease;
-    transition: .2s background-color ease;
-    font-size: 13px;
-    font-weight: 600;
-    cursor: pointer;
-    margin-top: 50px;
-    text-decoration: none;
-    transition: 0.5s;
+	display: inline-block;
+	background-color: #eee;
+	padding: 10px 20px;
+	border: 2px solid #eee;
+	color: #222;
+	text-transform: uppercase;
+	-webkit-transition: .2s background-color ease;
+	-o-transition: .2s background-color ease;
+	transition: .2s background-color ease;
+	font-size: 15px;
+	font-weight: 600;
+	cursor: pointer;
+	margin-top: 50px;
+	text-decoration: none;
+	transition: 0.5s;
+	letter-spacing: 1px;
 }
 
 section.about .main-btn:hover {
@@ -567,7 +569,7 @@ section.about .main-btn:hover {
 
 @media only screen and (max-width: 575px) {}
 
-/*--start blog--*/
+/*--end blog--*/
 
 
 
@@ -577,51 +579,86 @@ section.about .main-btn:hover {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*--site-footer--*/
-.site-footer {
-    padding: 50px 0 0 0;
+/*--start hire me--*/
+.hire-me {
+    padding: 5em 0;
+    position: relative;
     text-align: center;
-    background-color: #212121;
 }
 
-.site-footer .about-pera1 {
-    font-size: 16px;
-    font-weight: 500;
-    color: #eee;
+.hire-me {
+    background: #3e64ff;
+    z-index: 0;
+    position: relative;
+}
+
+.hire-me .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    content: '';
+    background: #000;
+    opacity: .7;
+}
+
+.hire-me h2 {
+    color: #fff;
+    font-size: 40px;
+    font-weight: 900;
+}
+
+.hire-me p {
+    color: rgba(255, 255, 255, .9);
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    margin-top: 10px;
+}
+
+.hire-me h2 span {
+    color: #aaa;
+}
+
+.hire-me .hire-btn {
+    display: inline-block;
+    background-color: #eee;
+    padding: 10px 40px;
+    border: 2px solid #eee;
+    color: #222;
+    text-transform: uppercase;
+    -webkit-transition: .2s background-color ease;
+    -o-transition: .2s background-color ease;
+    transition: .2s background-color ease;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 50px;
+    text-decoration: none;
+    transition: 0.5s;
     letter-spacing: 1px;
 }
 
-.site-footer h3 {
-    font-size: 16px;
-    font-weight: 500;
-    margin-bottom: 10px;
-    text-transform: uppercase;
+.hire-me .hire-btn:hover {
     color: #eee;
-    letter-spacing: 2px;
-}
-
-.site-footer p {
-    font-size: 20px;
-    text-align: center;
-    color: #fff;
+    border: 2px solid #222;
+    background-color: #222;
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+/*--tagline--*/
 .tagline {
     background-color: #000;
     padding: 20px 0;
