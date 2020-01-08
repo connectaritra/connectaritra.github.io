@@ -1,3 +1,5 @@
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.23, autoprefixer: v9.7.3) */
+
 h1,
 h2,
 h3,
@@ -241,6 +243,8 @@ html {
     text-decoration: none;
     letter-spacing: 1px;
     text-transform: uppercase;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
     transition: 0.5s;
 }
 
@@ -397,7 +401,6 @@ section.about .about-content .social-icons a {
     text-align: center;
     margin-right: 10px;
     background-color: #222;
-    -webkit-border-radius: 50%;
     border-radius: 50%;
     border: 2px solid #222;
     width: 30px;
@@ -439,6 +442,8 @@ section.about .main-btn {
     cursor: pointer;
     margin-top: 50px;
     text-decoration: none;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
     transition: 0.5s;
     letter-spacing: 1px;
 }
@@ -542,14 +547,23 @@ section.my-expertises p {
 }
 
 .how-it-works.row {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
 .how-it-works.row .col-2 {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
     display: inline-flex;
-    align-self: stretch;
-    align-items: center;
-    justify-content: center;
+    -ms-flex-item-align: stretch;
+        align-self: stretch;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 
 .how-it-works.row .col-2::after {
@@ -594,6 +608,8 @@ section.my-expertises p {
 }
 
 .timeline .col-2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     overflow: hidden;
 }
@@ -644,7 +660,6 @@ section.my-expertises p {
 
 /*--start numscroller--*/
 .stats {
-    -webkit-background-size: cover;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -737,9 +752,12 @@ section.my-expertises p {
 .blog-section .card {
     position: relative;
     display: -ms-flexbox;
+    display: -webkit-box;
     display: flex;
     -ms-flex-direction: column;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
     min-width: 0;
     word-wrap: break-word;
     background-color: #fff;
@@ -750,7 +768,8 @@ section.my-expertises p {
 
 .blog-section .card-body {
     -ms-flex: 1 1 auto;
-    flex: 1 1 auto;
+    -webkit-box-flex: 1;
+            flex: 1 1 auto;
     min-height: 1px;
     padding: 1.25rem;
     background-color: #000;
@@ -844,6 +863,8 @@ section.my-expertises p {
     cursor: pointer;
     margin-top: 50px;
     text-decoration: none;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
     transition: 0.5s;
     letter-spacing: 1px;
 }
