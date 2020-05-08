@@ -1,4 +1,4 @@
-/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.23, autoprefixer: v9.7.3) */
+
 
 h1,
 h2,
@@ -421,6 +421,12 @@ section.about .about-content .social-icons a .fa {
     -webkit-transition: .2s all ease;
     -o-transition: .2s all ease;
     transition: .2s all ease;
+}
+section.about .about-content .social-icons a .fab {
+	color: #aaa;
+	-webkit-transition: .2s all ease;
+	-o-transition: .2s all ease;
+	transition: .2s all ease;
 }
 
 section.about .about-content .social-icons a:hover {
