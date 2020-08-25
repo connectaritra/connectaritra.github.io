@@ -225,6 +225,7 @@ html {
 #home-svg .p-curve {
     fill: #111;
 }
+/*
 
 .site-header h1 {
     font-size: 22px;
@@ -234,6 +235,7 @@ html {
     color: #fff;
     font-family: 'Montserrat', sans-serif;
 }
+*/
 
 .site-header .head-link a {
     color: #aaa;
@@ -276,7 +278,7 @@ html {
     right: 0;
 }
 
-.site-background .name h2 {
+.site-background .name h1 {
     font-size: 80px;
     font-weight: 900;
     color: #fff;
