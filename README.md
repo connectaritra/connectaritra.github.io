@@ -1,2 +1,2 @@
-# https://aritraroy-web.github.io/
+# https://connectaritra.github.io/
 My Portfolio
