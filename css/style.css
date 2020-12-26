@@ -736,6 +736,7 @@ section.my-expertises p {
 
 
 /*--start blog--*/
+/*
 .blog-section {
     background-color: #111;
     padding: 5rem 0;
@@ -805,7 +806,7 @@ section.my-expertises p {
     letter-spacing: 1px;
 }
 
-/*start media query*/
+start media query
 @media only screen and (max-width: 1199px) {}
 
 @media only screen and (max-width: 991px) {}
@@ -817,6 +818,7 @@ section.my-expertises p {
 }
 
 @media only screen and (max-width: 575px) {}
+*/
 
 /*--end blog--*/
 
@@ -831,26 +833,10 @@ section.my-expertises p {
 /*--start hire me--*/
 .hire-me {
     padding: 5em 0;
-    position: relative;
     text-align: center;
+     background: #111;
 }
 
-.hire-me {
-    background: #3e64ff;
-    z-index: 0;
-    position: relative;
-}
-
-.hire-me .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    content: '';
-    background: #000;
-    opacity: .7;
-}
 
 .hire-me .freelance {}
 
