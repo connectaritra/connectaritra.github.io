@@ -867,7 +867,7 @@ section.my-expertises p {
 .hire-me {
     padding: 5em 0;
     text-align: center;
-    background: #111;
+    background: #000;
 }
 
 
@@ -934,14 +934,14 @@ section.my-expertises p {
 
 /*--tagline--*/
 .tagline {
-    background-color: #000;
-    padding: 20px 0;
+    background-color: #111;
+    padding: 10px 0;
 }
 
 .tagline h6 {
     color: #aaa;
     text-align: center;
-    font-size: 12px;
+    font-size: 10px;
     letter-spacing: 1px;
 }
 
