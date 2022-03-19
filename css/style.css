@@ -49,7 +49,8 @@ html {
 }
 
 .type-wrap {
-    text-align: center
+    text-align: center;
+    margin-top: 20px;
 }
 
 .spinner {
@@ -218,7 +219,7 @@ html {
 
 .site-background .name {
     position: absolute;
-    top: -600px;
+    top: -650px;
     left: 0;
     right: 0
 }
@@ -708,6 +709,13 @@ section.my-expertises p {
     }
     .stats .single-stat {
         margin-bottom: 50px;
+    }
+    .site-background .name h1 span {
+        display: block;
+        font-size: 5rem;
+    }
+    .site-background .name h1 {
+        font-size: 3.5rem;
     }
 }
 
