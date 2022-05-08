@@ -16,6 +16,11 @@ body {
     padding: 0
 }
 
+:root {
+    --primary-color: #111111;
+    --secondary-color: #f2f3f7;
+}
+
 html {
     scroll-behavior: smooth;
     height: 100%
@@ -192,7 +197,7 @@ html {
 }
 
 #home-svg .p-curve {
-    fill: #111
+    fill: var(--primary-color)
 }
 
 .site-header .head-link a {
@@ -255,7 +260,7 @@ html {
 
 section.about {
     padding: 10rem 0;
-    background-color: #111
+    background-color: var(--primary-color);
 }
 
 section.about .about-img {
@@ -291,7 +296,7 @@ section.about .about-content .about-heading h2 {
     font-size: 40px;
     font-weight: 700;
     text-transform: uppercase;
-    color: #aaa;
+    color: var(--secondary-color);
     letter-spacing: 1px;
     margin-bottom: 5px
 }
@@ -335,17 +340,22 @@ section.about .about-content .social-icons a {
     transition: .2s all ease;
     align-items: center;
     justify-content: center;
+    text-decoration: none;
+}
+
+section.about .about-content .social-icons a:hover {
+    text-decoration: none;
 }
 
 section.about .about-content .social-icons a .fa {
-    color: #aaa;
+    color: var(--secondary-color);
     -webkit-transition: .2s all ease;
     -o-transition: .2s all ease;
     transition: .2s all ease
 }
 
 section.about .about-content .social-icons a .fab {
-    color: #aaa;
+    color: var(--secondary-color);
     -webkit-transition: .2s all ease;
     -o-transition: .2s all ease;
     transition: .2s all ease
@@ -403,7 +413,7 @@ section.my-expertises h2 {
     font-size: 40px;
     font-weight: 700;
     text-transform: uppercase;
-    color: #aaa;
+    color: var(--secondary-color);
     letter-spacing: 1px;
     margin-bottom: 50px;
     text-align: center;
@@ -424,11 +434,11 @@ section.my-expertises h2::after {
 
 section.my-expertises h6 {
     padding-bottom: 10px;
-    font-size: 14px;
+    font-size: 18px;
     text-transform: uppercase;
     letter-spacing: 1px;
     font-weight: 500;
-    color: #878d8d;
+    color: var(--secondary-color);
     text-align: center
 }
 
@@ -447,7 +457,7 @@ section.my-expertises p {
     font-weight: 700;
     padding: 15px 20px;
     border-radius: 50%;
-    background-color: #aaa;
+    background-color: var(--secondary-color);
     color: #000;
     max-height: 50px;
     z-index: 2
@@ -634,7 +644,7 @@ section.my-expertises p {
 }
 
 .tagline {
-    background-color: #111;
+    background-color: var(--primary-color);
     padding: 10px 0
 }
 
@@ -784,7 +794,7 @@ section.ab-steps {
 
 .ab-steps .title h3 {
     font-size: 24px;
-    color: #aaa;
+    color: var(--secondary-color);
 }
 
 .ab-steps .text p {
