@@ -305,7 +305,8 @@ section.about .about-content .about-heading h2 {
     text-transform: uppercase;
     color: var(--secondary-color);
     letter-spacing: 1px;
-    margin-bottom: 5px
+    margin-bottom: 5px;
+    font-family: Raleway, sans-serif;
 }
 
 section.about .about-content .about-heading span {
@@ -432,7 +433,8 @@ section.my-expertises h2 {
     letter-spacing: 1px;
     margin-bottom: 50px;
     text-align: center;
-    position: relative
+    position: relative;
+    font-family: Raleway, sans-serif;
 }
 
 section.my-expertises h2::after {
@@ -458,13 +460,16 @@ section.my-expertises h6 {
 
 section.my-expertises h5 {
     margin-bottom: 5px;
-    color: #aaa;
-    letter-spacing: 1px
+    color: var(--secondary-color);
+    letter-spacing: 0.2px;
+    font-family: Raleway, sans-serif;
+    font-weight: 500;
+    font-size: 22px;
 }
 
 section.my-expertises p {
     color: #fff;
-    letter-spacing: 1px
+    color: var(--secondary-color);
 }
 
 .circle {
@@ -584,20 +589,21 @@ section.my-expertises p {
 
 .stats .single-stat {
     text-align: center;
-    color: #fff;
     z-index: 10;
     position: relative
 }
 
 .stats .single-stat h2 {
-    color: #fff;
-    font-weight: 800
+    color: var(--secondary-color);
+    font-weight: 400;
+    font-size: 50px;
+    margin-bottom: 10px;
 }
 
 .stats .single-stat p {
     font-weight: 600;
     margin-bottom: 30px;
-    color: #fff;
+    color: var(--secondary-color);
     font-size: 18px;
 }
 
@@ -605,6 +611,7 @@ section.my-expertises p {
     font-size: 50px;
     padding-bottom: 10px;
     margin-bottom: 10px;
+    color: var(--secondary-color);
 }
 
 .hire-me {
@@ -632,9 +639,9 @@ section.my-expertises p {
 
 .hire-me .hire-btn {
     display: inline-block;
-    background-color: #eee;
+    background-color: var(--secondary-color);
     padding: 10px 40px;
-    border: 2px solid #eee;
+    border: 2px solid var(--secondary-color);
     color: #222;
     text-transform: uppercase;
     -webkit-transition: .2s background-color ease;
@@ -663,10 +670,9 @@ section.my-expertises p {
 }
 
 .tagline h6 {
-    color: #aaa;
+    color: var(--secondary-color);
     text-align: center;
-    font-size: 10px;
-    letter-spacing: 1px
+    font-size: 12px;
 }
 
 @media only screen and (max-width:1199px) {
@@ -809,11 +815,13 @@ section.ab-steps {
 .ab-steps .title h3 {
     font-size: 24px;
     color: var(--secondary-color);
+    font-family: Raleway, sans-serif;
+    font-weight: 600;
 }
 
 .ab-steps .text p {
     font-size: 18px;
-    color: #ccc;
+    color: var(--secondary-color);
 }
 
 @media only screen and (max-width:768px) {
