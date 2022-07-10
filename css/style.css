@@ -17,8 +17,13 @@ body {
 }
 
 :root {
-    --primary-color: #111111;
-    --secondary-color: #f2f3f7;
+    --primary-color: #212428;
+    --secondary-color: #c4cfde;
+    --color-subtitle: #f9004d;
+    --shadow-1: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
+    --background-color-1: linear-gradient(145deg, #1e2024, #23272b);
+    --background-color-2: linear-gradient(to right bottom, #212428, #16181c);
+    --transition: 0.4s;
 }
 
 html {
@@ -26,17 +31,18 @@ html {
     height: 100%
 }
 
-.cursor {
+
+/* .cursor {
     position: absolute;
     width: 80px;
     height: 80px;
     top: 50%;
     left: 50%;
     margin: -50px 0 0 -50px;
-    background: #e74c3c;
+    background: var(--color-subtitle);
     border-radius: 80%;
     backface-visibility: hidden;
-}
+} */
 
 .hire-me {
     width: 100%;
@@ -232,15 +238,16 @@ html {
 .site-background .name h1 {
     font-size: 5em;
     font-weight: 900;
-    color: #fff;
+    color: #c4cfde;
     text-align: center
 }
 
 .site-background .name h6 {
-    font-size: 1.5em;
+    font-size: 1.4em;
     color: #eee;
     text-align: center;
-    margin-bottom: 20px
+    margin-bottom: 20px;
+    font-family: Raleway, sans-serif;
 }
 
 .site-background .name h3 {
@@ -303,13 +310,15 @@ section.about .about-content .about-heading h2 {
 
 section.about .about-content .about-heading span {
     font-family: Raleway, sans-serif;
-    color: #fff;
-    font-size: 19px
+    color: var(--color-subtitle);
+    font-size: 20px;
+    font-weight: 500;
+    display: block;
 }
 
 section.about .about-content p {
     line-height: 28px;
-    color: #eee;
+    color: var(--secondary-color);
     font-size: 18px;
 }
 
@@ -326,25 +335,29 @@ section.about .about-content .social-icons {
 
 section.about .about-content .social-icons a {
     display: inline-flex;
-    font-size: 30px;
-    line-height: 26px;
-    text-align: center;
+    font-size: 20px;
     margin-right: 10px;
-    background-color: #222;
-    border-radius: 50%;
-    border: 2px solid #222;
-    width: 70px;
-    height: 70px;
     -webkit-transition: .2s all ease;
     -o-transition: .2s all ease;
     transition: .2s all ease;
     align-items: center;
     justify-content: center;
     text-decoration: none;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border-radius: 6px;
+    transition: var(--transition);
+    background: var(--background-color-1);
+    box-shadow: var(--shadow-1);
 }
 
 section.about .about-content .social-icons a:hover {
     text-decoration: none;
+    transform: translateY(-3px);
+    background: var(--background-color-2);
 }
 
 section.about .about-content .social-icons a .fa {
@@ -361,14 +374,16 @@ section.about .about-content .social-icons a .fab {
     transition: .2s all ease
 }
 
-section.about .about-content .social-icons a:hover {
-    border: 2px solid #222;
-    background: 0 0;
-    line-height: 26px
-}
-
 section.about .about-content .social-icons a:hover .fa {
     color: #fff
+}
+
+section.about .about-content .social-icons .sbHead {
+    display: block;
+    color: var(--secondary-color);
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 20px;
 }
 
 section.about .main-btn {
@@ -406,7 +421,7 @@ section.about .main-btn:hover {
 
 section.my-expertises {
     padding: 5rem 0 10rem 0;
-    background-color: #000
+    background-color: var(--primary-color);
 }
 
 section.my-expertises h2 {
@@ -434,12 +449,11 @@ section.my-expertises h2::after {
 
 section.my-expertises h6 {
     padding-bottom: 10px;
-    font-size: 18px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+    font-size: 20px;
     font-weight: 500;
-    color: var(--secondary-color);
-    text-align: center
+    color: var(--color-subtitle);
+    text-align: center;
+    font-family: Raleway, sans-serif;
 }
 
 section.my-expertises h5 {
@@ -596,24 +610,24 @@ section.my-expertises p {
 .hire-me {
     padding: 5em 0;
     text-align: center;
-    background: #000
+    background: var(--primary-color)
 }
 
 .hire-me h2 {
-    color: #fff;
+    color: var(--secondary-color);
     font-size: 40px;
     font-weight: 900
 }
 
 .hire-me p {
-    color: rgba(255, 255, 255, .9);
+    color: var(--secondary-color);
     font-size: 18px;
     letter-spacing: .5px;
     margin-top: 10px
 }
 
 .hire-me h2 span {
-    color: #aaa
+    color: var(--color-subtitle)
 }
 
 .hire-me .hire-btn {
