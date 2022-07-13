@@ -31,6 +31,12 @@ html {
     height: 100%
 }
 
+@media only screen and (max-width:768px) {
+    h2 {
+        font-size: 28px !important;
+    }
+}
+
 
 /* .cursor {
     position: absolute;
@@ -337,7 +343,7 @@ section.about .about-content .social-icons {
 section.about .about-content .social-icons a {
     display: inline-flex;
     font-size: 20px;
-    margin-right: 10px;
+    margin: 0 10px 10px 0;
     -webkit-transition: .2s all ease;
     -o-transition: .2s all ease;
     transition: .2s all ease;
@@ -418,6 +424,9 @@ section.about .main-btn:hover {
     section.about .about-content .about-heading {
         margin-top: 50px
     }
+    section.about {
+        padding: 10rem 0 6rem;
+    }
 }
 
 section.my-expertises {
@@ -468,11 +477,10 @@ section.my-expertises h5 {
 }
 
 section.my-expertises p {
-    color: #fff;
     color: var(--secondary-color);
 }
 
-.circle {
+section.my-expertises .circle {
     font-weight: 700;
     padding: 15px 20px;
     border-radius: 50%;
@@ -575,6 +583,18 @@ section.my-expertises p {
 .timeline .right-bottom {
     left: 50%;
     top: calc(50% - 3px)
+}
+
+@media only screen and (max-width:768px) {
+    section.my-expertises {
+        padding: 1rem 0 5rem 0;
+    }
+    section.my-expertises h5 {
+        font-size: 18px;
+    }
+    section.my-expertises p {
+        font-size: 14px;
+    }
 }
 
 .stats {
@@ -734,7 +754,6 @@ section.my-expertises p {
         font-size: 14px
     }
     .hire-me h2 {
-        font-size: 30px;
         line-height: 42px;
     }
     .stats .single-stat {
@@ -769,8 +788,20 @@ section.my-expertises p {
 /*--*/
 
 section.ab-steps {
-    padding: 5rem 0;
-    background-color: #1b1c1e;
+    padding: 0 0 4rem;
+    background-color: var(--primary-color);
+}
+
+.ab-steps h2 {
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--secondary-color);
+    letter-spacing: 1px;
+    margin-bottom: 50px;
+    text-align: center;
+    position: relative;
+    font-family: Raleway, sans-serif;
 }
 
 .ab-steps .list_inner {
@@ -824,8 +855,48 @@ section.ab-steps {
     color: var(--secondary-color);
 }
 
+.ab-steps .skills-icons a {
+    display: inline-flex;
+    font-size: 20px;
+    margin: 0 10px 10px 0;
+    -webkit-transition: .2s all ease;
+    -o-transition: .2s all ease;
+    transition: .2s all ease;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border-radius: 6px;
+    transition: var(--transition);
+    background: var(--background-color-1);
+    box-shadow: var(--shadow-1);
+}
+
+.ab-steps .skills-icons {
+    margin-top: 4rem;
+    text-align: center;
+}
+
+.ab-steps .skills-icons img {
+    width: 30px;
+    height: 30px;
+}
+
+.ab-steps .skills-icons a:hover {
+    text-decoration: none;
+    transform: translateY(-3px);
+    background: var(--background-color-2);
+}
+
 @media only screen and (max-width:768px) {
     .ab-steps .list_inner {
         margin-bottom: 50px;
+    }
+    .ab-steps .skills-icons {
+        margin-top: 1rem;
     }
 }
