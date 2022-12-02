@@ -96,9 +96,11 @@ html {
     0% {
         -webkit-transform: perspective(120px)
     }
+
     50% {
         -webkit-transform: perspective(120px) rotateY(180deg)
     }
+
     100% {
         -webkit-transform: perspective(120px) rotateY(180deg) rotateX(180deg)
     }
@@ -109,10 +111,12 @@ html {
         transform: perspective(120px) rotateX(0) rotateY(0);
         -webkit-transform: perspective(120px) rotateX(0) rotateY(0)
     }
+
     50% {
         transform: perspective(120px) rotateX(-180.1deg) rotateY(0);
         -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0)
     }
+
     100% {
         transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
         -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg)
@@ -336,62 +340,6 @@ section.about .about-content p span {
     letter-spacing: 1px
 }
 
-section.about .about-content .social-icons {
-    margin-top: 50px
-}
-
-section.about .about-content .social-icons a {
-    display: inline-flex;
-    font-size: 20px;
-    margin: 0 10px 10px 0;
-    -webkit-transition: .2s all ease;
-    -o-transition: .2s all ease;
-    transition: .2s all ease;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    width: 60px;
-    height: 60px;
-    text-align: center;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    border-radius: 6px;
-    transition: var(--transition);
-    background: var(--background-color-1);
-    box-shadow: var(--shadow-1);
-}
-
-section.about .about-content .social-icons a:hover {
-    text-decoration: none;
-    transform: translateY(-3px);
-    background: var(--background-color-2);
-}
-
-section.about .about-content .social-icons a .fa {
-    color: var(--secondary-color);
-    -webkit-transition: .2s all ease;
-    -o-transition: .2s all ease;
-    transition: .2s all ease
-}
-
-section.about .about-content .social-icons a .fab {
-    color: var(--secondary-color);
-    -webkit-transition: .2s all ease;
-    -o-transition: .2s all ease;
-    transition: .2s all ease
-}
-
-section.about .about-content .social-icons a:hover .fa {
-    color: #fff
-}
-
-section.about .about-content .social-icons .sbHead {
-    display: block;
-    color: var(--secondary-color);
-    font-size: 16px;
-    font-weight: 600;
-    margin-bottom: 20px;
-}
 
 section.about .main-btn {
     display: inline-block;
@@ -420,13 +368,78 @@ section.about .main-btn:hover {
     background-color: #222
 }
 
+
+
+
+
+
+section.social-icons {
+    margin-top: 50px
+}
+
+section.social-icons a {
+    display: inline-flex;
+    font-size: 20px;
+    margin: 0 10px 10px 0;
+    -webkit-transition: .2s all ease;
+    -o-transition: .2s all ease;
+    transition: .2s all ease;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border-radius: 6px;
+    transition: var(--transition);
+    background: var(--background-color-1);
+    box-shadow: var(--shadow-1);
+}
+
+section.social-icons a:hover {
+    text-decoration: none;
+    transform: translateY(-3px);
+    background: var(--background-color-2);
+}
+
+section.social-icons a .fa {
+    color: var(--secondary-color);
+    -webkit-transition: .2s all ease;
+    -o-transition: .2s all ease;
+    transition: .2s all ease
+}
+
+section.social-icons a .fab {
+    color: var(--secondary-color);
+    -webkit-transition: .2s all ease;
+    -o-transition: .2s all ease;
+    transition: .2s all ease
+}
+
+section.social-icons a:hover .fa {
+    color: #fff
+}
+
+section.social-icons .sbHead {
+    display: block;
+    color: var(--color-subtitle);
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+
 @media only screen and (max-width:767px) {
     section.about .about-content .about-heading {
         margin-top: 50px
     }
+
     section.about {
         padding: 10rem 0 6rem;
     }
+
     section.about .about-content .about-heading span {
         font-size: 18px;
     }
@@ -594,19 +607,28 @@ section.my-expertises .circle {
 
 .my-expertises .hbyWrp {
     display: inline-flex;
-    margin: 0 10px 20px 0;
+    margin: 12px;
     -webkit-transition: .2s all ease;
     -o-transition: .2s all ease;
     transition: .2s all ease;
-    align-items: center;
-    justify-content: center;
+    /* align-items: center; */
+    /* justify-content: center; */
     text-decoration: none;
-    text-align: center;
+    /* text-align: center; */
     border-radius: 40px;
     transition: var(--transition);
-    background: var(--background-color-1);
+    /* background: var(--background-color-1); */
     box-shadow: var(--shadow-1);
+    /* padding: 12px 25px; */
+}
+
+.my-expertises .hbInr {
+    display: flex;
+    background: var(--background-color-1);
     padding: 12px 25px;
+    margin: 2px;
+    /* margin: 0 10px 20px 0; */
+    border-radius: 40px;
 }
 
 .my-expertises .hobbies h5 {
@@ -625,18 +647,19 @@ section.my-expertises .circle {
     section.my-expertises {
         padding: 1rem 0 5rem 0;
     }
+
     section.my-expertises h5 {
         font-size: 18px;
     }
+
     section.my-expertises p {
         font-size: 14px;
     }
+
     .my-expertises .hobbies h5 {
         font-size: 14px;
     }
-    .my-expertises .hbyWrp {
-        padding: 8px 18px;
-    }
+
 }
 
 .stats {
@@ -742,15 +765,18 @@ section.my-expertises .circle {
         position: absolute;
         top: -400px
     }
+
     .site-background .name h2 {
         font-size: 60px;
         margin-bottom: 20px;
         text-shadow: 4px 0 4px #000
     }
+
     .site-background .name h6 {
         font-size: 20px;
         margin-bottom: 20px
     }
+
     .site-background .name h3 {
         font-size: 30px;
         margin-bottom: 20px
@@ -762,12 +788,15 @@ section.my-expertises .circle {
         position: absolute;
         top: -350px
     }
+
     .site-background .name h2 {
         font-size: 50px
     }
+
     .site-background .name h3 {
         font-size: 25px
     }
+
     .site-background .name i {
         font-size: 20px
     }
@@ -781,34 +810,43 @@ section.my-expertises .circle {
         cursor: pointer;
         font-size: 24px
     }
+
     .header-menu {
         display: none
     }
+
     .site-background .name {
         position: absolute;
         top: -250px
     }
+
     #typed,
     .typed-cursor {
         font-size: 20px !important
     }
+
     .tagline h6 {
         font-size: 14px
     }
+
     .hire-me h2 {
         line-height: 35px;
         margin-bottom: 30px;
     }
+
     .stats .single-stat {
         margin-bottom: 50px;
     }
+
     .site-background .name h1 span {
         display: block;
         font-size: 5rem;
     }
+
     .site-background .name h1 {
         font-size: 3.5rem;
     }
+
     .hire-me p {
         font-size: 16px;
     }
@@ -819,12 +857,15 @@ section.my-expertises .circle {
         position: absolute;
         top: -150px
     }
+
     .site-background .name h2 {
         font-size: 40px
     }
+
     .site-background .name h3 {
         font-size: 20px
     }
+
     .site-background .name i {
         font-size: 18px
     }
@@ -951,9 +992,11 @@ section.ab-steps {
     .ab-steps .list_inner {
         margin-bottom: 50px;
     }
+
     .ab-steps .skills-icons {
         margin-top: 1rem;
     }
+
     .ab-steps .heading span {
         font-size: 18px;
     }
@@ -1191,6 +1234,7 @@ section.ab-steps {
     .site-header-inner .nav-item {
         font-size: 16px;
     }
+
     .site-header-inner .login-btn {
         font-size: 16px;
         padding: 5px 15px;
@@ -1201,6 +1245,7 @@ section.ab-steps {
     .site-header-inner .nav-item:after {
         display: none;
     }
+
     .site-header-inner .nav-item::before {
         position: absolute;
         display: block;
@@ -1213,6 +1258,7 @@ section.ab-steps {
         background-color: var(--light-black-color);
         vertical-align: 0;
     }
+
     .site-header-inner .dropdown-toggle::after {
         position: absolute;
         display: block;
@@ -1226,26 +1272,32 @@ section.ab-steps {
         vertical-align: 0;
         transition: all 200ms linear;
     }
+
     .site-header-inner .dropdown-toggle[aria-expanded="true"]::after {
         transform: rotate(90deg);
         opacity: 0;
     }
+
     .site-header-inner .dropdown-menu {
         padding: 0 !important;
         background-color: transparent;
         box-shadow: none;
         transition: all 200ms linear;
     }
+
     .site-header-inner .dropdown-toggle[aria-expanded="true"]+.dropdown-menu {
         margin-top: 10px !important;
         margin-bottom: 20px !important;
     }
+
     body.dark .nav-item::before {
         background-color: var(--off-white-color);
     }
+
     body.dark .dropdown-toggle::after {
         background-color: var(--off-white-color);
     }
+
     body.dark .dropdown-menu {
         background-color: transparent;
         box-shadow: none;
