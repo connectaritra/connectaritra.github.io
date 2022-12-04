@@ -121,7 +121,7 @@
             <p>
               <!-- Passionate Designer & Developer who loves simplicity in things and crafts beautiful user interfaces with love. -->
               Passionate Front-End Developer and specialised in the field of
-              UI/UX Designer for last 3/4 years. Currently working in
+              UI/UX Designer for last 4/5 years. Currently working in
               <a target="_blank" href="https://www.cloudifyapps.com/"><span>Cloudifyapps Private Limited</span></a>.
             </p>
 
@@ -301,6 +301,7 @@
             <a href="#"><img src="images/css.svg" alt="CSS" /></a>
             <a href="#"><img src="images/bootstrap.svg" alt="Bootstrap" /></a>
             <a href="#"><img src="images/javascript.svg" alt="Javascript" /></a>
+            <a href="#"><img src="images/quasar.svg" alt="Quasar" /></a>
             <a href="#"><img src="images/github.svg" alt="Github" /></a>
             <a href="#"><img src="images/tailwind.svg" alt="Tailwind Css" /></a>
             <a href="#"><img src="images/materialize.svg" alt="Materialize Css" /></a>
@@ -499,8 +500,8 @@
             <span class="stat-icon">
               <i class="fa fa-thumbs-up" aria-hidden="true"></i>
             </span>
-            <h2 class="numscroller" data-min="1" data-max="7" data-delay="1" data-increment="1">
-              7
+            <h2 class="numscroller" data-min="1" data-max="8" data-delay="1" data-increment="1">
+              8
             </h2>
             <p>Projects Completed</p>
           </div>
@@ -511,8 +512,8 @@
             <span class="stat-icon">
               <i class="fa fa-edit" aria-hidden="true"></i>
             </span>
-            <h2 class="numscroller" data-min="1" data-max="4" data-delay="1" data-increment="1">
-              4
+            <h2 class="numscroller" data-min="1" data-max="5" data-delay="1" data-increment="1">
+              5
             </h2>
             <p>Years of Experience</p>
           </div>
@@ -554,12 +555,30 @@
             <!--About Social Icons-->
             <section class="social-icons">
               <span class="sbHead">Connect me through</span>
-              <a href="mailto:web.aritra@gmail.com" target="_blank"><i class="fa fa-envelope"></i></a>
-              <a href="https://www.linkedin.com/in/connectaritra" target="_blank"><i class="fa fa-linkedin"></i></a>
-              <a href="https://twitter.com/connectaritra" target="_blank"><i class="fa fa-twitter"></i></a>
-              <a href="https://www.instagram.com/connectaritra" target="_blank"><i class="fa fa-instagram"></i></a>
-              <a href="https://www.facebook.com/connectaritra" target="_blank"><i class="fa fa-facebook"></i></a>
-              <a href="https://in.pinterest.com/connectaritra" target="_blank"><i class="fa fa-pinterest"></i></a>
+              <a href="mailto:web.aritra@gmail.com" target="_blank" data-toggle="tooltip" data-placement="top"
+                title="Email Me">
+                <i class="fa fa-envelope"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/connectaritra" target="_blank" data-toggle="tooltip"
+                data-placement="top" title="Linkedin">
+                <i class="fa fa-linkedin"></i>
+              </a>
+              <a href="https://twitter.com/connectaritra" target="_blank" data-toggle="tooltip" data-placement="top"
+                title="Twitter">
+                <i class="fa fa-twitter"></i>
+              </a>
+              <a href="https://www.instagram.com/connectaritra" target="_blank" data-toggle="tooltip"
+                data-placement="top" title="Instagram">
+                <i class="fa fa-instagram"></i>
+              </a>
+              <a href="https://www.facebook.com/connectaritra" target="_blank" data-toggle="tooltip"
+                data-placement="top" title="Facebook">
+                <i class="fa fa-facebook"></i>
+              </a>
+              <a href="https://in.pinterest.com/connectaritra" target="_blank" data-toggle="tooltip"
+                data-placement="top" title="Pinterest">
+                <i class="fa fa-pinterest"></i>
+              </a>
               <!--                            <a href="https://connectaritra.blogspot.com" target="_blank"><i class="fab fa-blogger-b"></i></a>-->
             </section>
 
@@ -590,6 +609,8 @@
 
   <!--cursor-->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.11.4/TweenMax.min.js"></script>
+
+
 
   <!--Jquery Water Ripple Effect-->
   <script>
@@ -692,6 +713,13 @@
     function foo() {
       console.log("Callback");
     }
+  </script>
+
+
+  <script>
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+    })
   </script>
 </body>
 
