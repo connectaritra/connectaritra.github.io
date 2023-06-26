@@ -27,6 +27,28 @@ body {
     --transition: 0.4s;
 }
 
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #212428 #ffffff;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+    width: 0px;
+}
+
+*::-webkit-scrollbar-track {
+    background: #ffffff;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #212428;
+    border-radius: 10px;
+    border: 0px none #ffffff;
+}
+
 html {
     scroll-behavior: smooth;
     height: 100%
