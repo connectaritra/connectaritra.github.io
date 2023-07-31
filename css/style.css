@@ -61,17 +61,18 @@ html {
 }
 
 
-/* .cursor {
+ .cursor {
     position: absolute;
     width: 80px;
     height: 80px;
     top: 50%;
     left: 50%;
     margin: -50px 0 0 -50px;
-    background: var(--color-subtitle);
+    background: #ffffff1a;
     border-radius: 80%;
     backface-visibility: hidden;
-} */
+    filter: blur(20px);
+} 
 
 .hire-me {
     width: 100%;
@@ -506,12 +507,16 @@ section.my-expertises p {
 
 section.my-expertises .circle {
     font-weight: 700;
-    padding: 15px 20px;
+    padding: 5px;
     border-radius: 50%;
     background-color: var(--secondary-color);
     color: #000;
-    max-height: 50px;
-    z-index: 2
+    height: 50px;
+    z-index: 2;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .my-expertises .how-it-works.row {
@@ -550,7 +555,7 @@ section.my-expertises .circle {
 
 .my-expertises .how-it-works.row .col-2.full::after {
     height: 100%;
-    left: calc(50% - 3px)
+    left: calc(50% - 2px)
 }
 
 .my-expertises .how-it-works.row .col-2.left-full::after {
@@ -561,7 +566,8 @@ section.my-expertises .circle {
 .my-expertises .how-it-works.row .col-2.top::after {
     height: 50%;
     left: 50%;
-    top: 0
+    top: 0;
+    left: calc(50% - 2px);
 }
 
 .my-expertises .timeline div {
