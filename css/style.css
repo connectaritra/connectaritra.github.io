@@ -146,55 +146,59 @@ html {
     }
 }
 
-.site-nav-icon i {
-    color: #fff
+
+
+.mobile-nav {
+    background-color: var(--primary-color);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 320px;
+    z-index: 9;
 }
 
-.mob-menu ul {
-    margin: 0;
-    width: 100%;
-    text-align: center;
+.navMenuBar {
+    display: none;
+    color: #fff;
+}
+
+.mobile-nav .navbar-nav {
+    margin-top: 50px;
+}
+
+.mobile-nav .navbar-nav .nav-item {
+    margin-bottom: 10px;
+}
+
+.mobile-nav .navbar-nav .nav-item .nav-link{
+    color: var(--secondary-color);
+    padding-left: 20px;
+}
+
+.mobile-nav .close {
+    color: var(--secondary-color);
     position: absolute;
-    top: 108px;
-    right: 0;
-    z-index: 9
+    right: 10px;
+    top: 10px;
+    padding: 10px;
 }
 
-.mob-menu ul li:nth-child(odd) {
-    background: #171616
+.screen-overlay {
+    transition: opacity 0.5s ease, width 0s;
+    opacity: 1;
+    width: 100%;
+    visibility: visible;
+    height: 100%;
+    z-index: 99999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(34, 34, 34, 0.6);
+    display: none;
 }
 
-.mob-menu ul li:nth-child(even) {
-    background: #272727
-}
 
-.mob-menu ul li:last-child {
-    border-bottom: none
-}
-
-.mob-menu ul li {
-    border-bottom: 1px solid #aaa;
-    list-style-type: none;
-    padding: 20px 0;
-    display: block;
-    width: 100%
-}
-
-.mob-menu ul li a {
-    color: #eee;
-    font-size: 16px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    text-decoration: none
-}
-
-.site-nav-icon {
-    display: none
-}
-
-.mob-dropmenu {
-    display: none
-}
 
 .progress-container {
     width: 100%;
@@ -252,6 +256,12 @@ html {
     -o-transition: .5s;
     transition: .5s;
     font-weight: 600;
+}
+
+.site-header .head-link {
+    display: flex;
+    align-items: center;
+    justify-content: end;
 }
 
 .site-header .head-link a:first-child {
@@ -401,6 +411,7 @@ section.social-icons a {
     -o-transition: var(--transition);
     transition: var(--transition);
     background: var(--background-color-1);
+    color: var(--secondary-color);
     -webkit-box-shadow: var(--shadow-1);
     box-shadow: var(--shadow-1);
 }
@@ -709,7 +720,7 @@ section.my-expertises .circle {
     font-size: 18px;
 }
 
-.stats .single-stat .stat-icon .fa {
+.stats .single-stat .stat-icon i {
     font-size: 50px;
     padding-bottom: 10px;
     margin-bottom: 10px;
@@ -765,7 +776,7 @@ section.my-expertises .circle {
     font-size: 12px;
 }
 
-@media only screen and (max-width:1199px) {
+@media only screen and (max-width:1200px) {
     .site-background .name {
         position: absolute;
         top: -400px
@@ -788,7 +799,7 @@ section.my-expertises .circle {
     }
 }
 
-@media only screen and (max-width:991px) {
+@media only screen and (max-width:992px) {
     .site-background .name {
         position: absolute;
         top: -350px
@@ -805,21 +816,15 @@ section.my-expertises .circle {
     .site-background .name i {
         font-size: 20px
     }
-}
-
-@media only screen and (max-width:767px) {
-    .site-nav-icon {
+    .navMenuBar {
         display: block;
-        float: right;
-        margin: 20px 0;
-        cursor: pointer;
-        font-size: 24px
     }
-
     .header-menu {
         display: none
     }
+}
 
+@media only screen and (max-width:768px) {
     .site-background .name {
         position: absolute;
         top: -250px

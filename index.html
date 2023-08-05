@@ -15,8 +15,7 @@
   <link rel="icon" href="images/aritraroy.ico" />
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet" />
-  <link href="css/font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.css" rel="stylesheet" type="text/css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet" />
   <link href="css/style.css" rel="stylesheet" type="text/css" />
 </head>
 
@@ -35,18 +34,25 @@
     <header class="site-header">
       <div class="container">
         <!--start mobile header-->
-        <a class="site-nav-icon">
-          <i class="fa fa-bars" aria-hidden="true"></i>
-        </a>
-        <div class="mob-menu">
-          <ul class="mob-dropmenu">
-            <li><a href="#">Home</a></li>
-            <li><a href="#about-me">About Me</a></li>
-            <li><a href="#expertises">Expertises</a></li>
-
-          </ul>
+        <i class="fa-solid fa-bars navMenuBar"></i>
+        <div class="screen-overlay">
+            <div class="mobile-nav">
+              <img src="images/logo-white.png" class="img-fluid" style="width: 30%; margin: 40px 0 20px 20px;" alt="Logo">
+                <i class="fa-solid fa-xmark close"></i>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about-me">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#expertises">Expertises</a>
+                    </li>>
+                </ul>
+            </div>
         </div>
-        <!-- end mobile header -->
+
         <div class="header-menu">
           <div class="row">
             <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
@@ -320,6 +326,7 @@
             <a href="#"><img src="images/adobe-photoshop.svg" alt="Photoshop" /></a>
             <a href="#"><img src="images/adobe-illustrator.svg" alt="Adobe Illustrator" /></a>
             <a href="#"><img src="images/adobe-xd.svg" alt="Adobe XD" /></a>
+            <a href="#"><img src="images/figma.svg" alt="Figma" /></a>
           </div>
         </div>
       </div>
@@ -547,7 +554,7 @@
           <!--Stats Item-->
           <div class="single-stat">
             <span class="stat-icon">
-              <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+              <i class="fa-solid fa-heart"></i>
             </span>
             <h2 class="numscroller" data-min="1" data-max="18" data-delay="1" data-increment="1">
               18
@@ -559,7 +566,7 @@
           <!--Stats Item-->
           <div class="single-stat">
             <span class="stat-icon">
-              <i class="fa fa-edit" aria-hidden="true"></i>
+              <i class="fa-solid fa-layer-group"></i>
             </span>
             <h2 class="numscroller" data-min="1" data-max="5" data-delay="1" data-increment="1">
               5
@@ -571,7 +578,7 @@
           <!--Stats Item-->
           <div class="single-stat">
             <span class="stat-icon">
-              <i class="fa fa-trophy" aria-hidden="true"></i>
+              <i class="fa-solid fa-star"></i>
             </span>
             <h2 class="numscroller" data-min="1" data-max="3" data-delay="1" data-increment="1">
               3
@@ -610,29 +617,33 @@
               <span class="sbHead">Connect me through</span>
               <a href="mailto:web.aritra@gmail.com" target="_blank" data-toggle="tooltip" data-placement="top"
                 title="Email Me">
-                <i class="fa fa-envelope"></i>
+                <i class="fa-regular fa-envelope"></i>
               </a>
               <a href="https://www.linkedin.com/in/connectaritra" target="_blank" data-toggle="tooltip"
                 data-placement="top" title="Linkedin">
-                <i class="fa fa-linkedin"></i>
+                <i class="fa-brands fa-linkedin-in"></i>
               </a>
               <a href="https://twitter.com/connectaritra" target="_blank" data-toggle="tooltip" data-placement="top"
                 title="Twitter">
-                <i class="fa fa-twitter"></i>
+                <i class="fa-brands fa-x-twitter"></i>
               </a>
               <a href="https://www.instagram.com/connectaritra" target="_blank" data-toggle="tooltip"
                 data-placement="top" title="Instagram">
-                <i class="fa fa-instagram"></i>
+                <i class="fa-brands fa-instagram"></i>
               </a>
               <a href="https://www.facebook.com/connectaritra" target="_blank" data-toggle="tooltip"
                 data-placement="top" title="Facebook">
-                <i class="fa fa-facebook"></i>
+                <i class="fa-brands fa-facebook-f"></i>
               </a>
               <a href="https://in.pinterest.com/connectaritra" target="_blank" data-toggle="tooltip"
                 data-placement="top" title="Pinterest">
-                <i class="fa fa-pinterest"></i>
+                <i class="fa-brands fa-pinterest-p"></i>
               </a>
-              <!--                            <a href="https://connectaritra.blogspot.com" target="_blank"><i class="fab fa-blogger-b"></i></a>-->
+              <a href="https://dribbble.com/connectaritra" target="_blank" data-toggle="tooltip"
+                data-placement="top" title="Dribble">
+                <i class="fa-solid fa-basketball"></i>
+              </a>
+              <!--<a href="https://connectaritra.blogspot.com" target="_blank"><i class="fab fa-blogger-b"></i></a>-->
             </section>
 
 
@@ -772,6 +783,18 @@
     $(function () {
       $('[data-toggle="tooltip"]').tooltip()
     })
+  </script>
+
+  <script>
+      $(document).ready(function () {
+          $(".navMenuBar").click(function () {
+              $(".screen-overlay").show();
+          });
+
+          $(".close").click(function () {
+              $(".screen-overlay").hide();
+          });
+      });
   </script>
 </body>
 
