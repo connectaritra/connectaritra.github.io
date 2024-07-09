@@ -29,24 +29,25 @@ body {
 
 /* ===== Scrollbar CSS ===== */
 /* Firefox */
-* {
+::-webkit-scrollbar {
     scrollbar-width: thin;
     scrollbar-color: #212428 #ffffff;
 }
 
 /* Chrome, Edge, and Safari */
-*::-webkit-scrollbar {
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar {
     width: 0px;
+    background-color: #F5F5F5;
 }
 
-*::-webkit-scrollbar-track {
-    background: #ffffff;
-}
-
-*::-webkit-scrollbar-thumb {
-    background-color: #212428;
-    border-radius: 10px;
-    border: 0px none #ffffff;
+::-webkit-scrollbar-thumb {
+    background-color: #000000;
+    border: 2px solid #555555;
 }
 
 html {
@@ -61,7 +62,7 @@ html {
 }
 
 
- .cursor {
+.cursor {
     position: absolute;
     width: 80px;
     height: 80px;
@@ -72,7 +73,7 @@ html {
     border-radius: 80%;
     backface-visibility: hidden;
     filter: blur(20px);
-} 
+}
 
 .hire-me {
     width: 100%;
@@ -171,7 +172,7 @@ html {
     margin-bottom: 10px;
 }
 
-.mobile-nav .navbar-nav .nav-item .nav-link{
+.mobile-nav .navbar-nav .nav-item .nav-link {
     color: var(--secondary-color);
     padding-left: 20px;
 }
@@ -281,7 +282,7 @@ html {
 
 .site-background .name h1 {
     font-size: 5em;
-    font-weight: 900;
+    font-weight: 700;
     color: #c4cfde;
     text-align: center
 }
@@ -816,9 +817,11 @@ section.my-expertises .circle {
     .site-background .name i {
         font-size: 20px
     }
+
     .navMenuBar {
         display: block;
     }
+
     .header-menu {
         display: none
     }
