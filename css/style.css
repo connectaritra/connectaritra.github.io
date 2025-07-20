@@ -72,7 +72,7 @@ html {
     background: #ffffff1a;
     border-radius: 80%;
     backface-visibility: hidden;
-    filter: blur(20px);
+    /* filter: blur(20px); */
 }
 
 .hire-me {
