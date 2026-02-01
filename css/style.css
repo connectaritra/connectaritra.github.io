@@ -21,6 +21,7 @@ body {
     --primary-color: #212428;
     --secondary-color: #c4cfde;
     --color-subtitle: #f9004d;
+    --color-subtitle-2: linear-gradient(90deg, #6a8dff, #b56bff);
     --shadow-1: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
     --background-color-1: linear-gradient(145deg, #1e2024, #23272b);
     --background-color-2: linear-gradient(to right bottom, #212428, #16181c);
@@ -356,7 +357,9 @@ section.about .about-content .about-heading h2 {
 
 section.about .about-content .about-heading span {
     font-family: Raleway, sans-serif;
-    color: var(--color-subtitle);
+    background: var(--color-subtitle-2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     font-size: 20px;
     font-weight: 500;
     display: block;
@@ -374,6 +377,72 @@ section.about .about-content p span {
     font-size: 18px;
     font-weight: 600;
     letter-spacing: 1px
+}
+
+
+
+
+
+
+
+.skills-section {
+    width: 100%;
+    padding: 0 0 80px 0;
+    background: var(--primary-color);
+    color: #fff;
+}
+
+
+.skills-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+    padding: 0 40px;
+}
+
+.skill-box {
+    padding: 25px;
+    border-radius: 18px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    backdrop-filter: blur(12px);
+    transition: 0.3s ease;
+}
+
+.skill-box:hover {
+    transform: translateY(-5px);
+    border-color: rgba(155, 100, 255, 0.5);
+}
+
+.skill-box h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    font-weight: 600;
+    font-family: Raleway, sans-serif;
+    background: var(--color-subtitle-2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.skill-box ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.skill-box ul li {
+    font-size: 16px;
+    color: var(--secondary-color);
+    margin-bottom: 6px;
+    padding-left: 10px;
+    position: relative;
+}
+
+.skill-box ul li:before {
+    content: "•";
+    position: absolute;
+    left: -4px;
+    color: #9f6bff;
 }
 
 
@@ -446,7 +515,9 @@ section.social-icons a:hover .fa {
 
 section.social-icons .sbHead {
     display: block;
-    color: var(--color-subtitle);
+    background: var(--color-subtitle-2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     font-size: 20px;
     font-weight: 600;
     margin-bottom: 20px;
@@ -500,7 +571,9 @@ section.my-expertises h6 {
     padding-bottom: 10px;
     font-size: 20px;
     font-weight: 500;
-    color: var(--color-subtitle);
+    background: var(--color-subtitle-2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     text-align: center;
     font-family: Raleway, sans-serif;
 }
@@ -651,6 +724,7 @@ section.my-expertises .circle img {
     position: relative;
 }
 
+/* 
 .my-expertises .hbySt1 {
     background-image: linear-gradient(180deg, rgba(255, 230, 0, .6), rgba(31, 30, 28, .6) 67.59%);
 }
@@ -690,17 +764,26 @@ section.my-expertises .circle img {
 
 .my-expertises .hbySt5:hover {
     background: linear-gradient(170deg, rgba(158, 0, 255, .6), rgba(31, 30, 28, .6) 67.59%);
-}
+} */
 
 .my-expertises .hbInr {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    background: var(--background-color-1);
+    /* background: var(--background-color-1); */
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    backdrop-filter: blur(12px);
+    transition: 0.3s ease;
     padding: 12px 25px;
     margin: 2px;
     /* margin: 0 10px 20px 0; */
     border-radius: 40px;
+}
+
+.my-expertises .hbInr:hover {
+    transform: translateY(-3px);
+    border-color: rgba(155, 100, 255, 0.5);
 }
 
 .my-expertises .hobbies h5 {
@@ -805,7 +888,9 @@ section.my-expertises .circle img {
 }
 
 .hire-me h2 span {
-    color: var(--color-subtitle)
+    background: var(--color-subtitle-2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 
@@ -947,7 +1032,9 @@ section.ab-steps {
 
 .ab-steps .heading span {
     font-family: Raleway, sans-serif;
-    color: var(--color-subtitle);
+    background: var(--color-subtitle-2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     font-size: 20px;
     font-weight: 500;
     display: block;
