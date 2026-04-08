@@ -1263,7 +1263,7 @@ section.blog-section h2 {
     transition: 0.35s ease;
     position: relative;
     height: 100%;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .blog-card:hover {
@@ -1318,7 +1318,7 @@ section.blog-section h2 {
 @media only screen and (max-width:992px) {
     .blog-card {
         height: initial;
-        margin-bottom: 20px;
+        margin-bottom: 40px;
     }
 
     .blog-section {
