@@ -1263,7 +1263,10 @@ section.blog-section h2 {
     transition: 0.35s ease;
     position: relative;
     height: 100%;
-    margin-bottom: 20px;
+}
+
+.blog-section .col-lg-4 {
+    margin-bottom: 30px;
 }
 
 .blog-card:hover {
@@ -1273,12 +1276,12 @@ section.blog-section h2 {
 
 .blog-img img {
     width: 100%;
-    height: 200px;
+    height: 250px;
     object-fit: cover;
 }
 
 .blog-content {
-    padding: 20px;
+    padding: 20px 20px 0 20px;
 }
 
 .blog-content h3 {
@@ -1309,6 +1312,18 @@ section.blog-section h2 {
 }
 
 
+.link-btn {
+    font-family: Raleway, sans-serif;
+    background: var(--color-subtitle-2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 16px;
+    font-weight: 500;
+    display: block;
+    text-align: right;
+    margin: 20px 0;
+}
+
 .blog-btn:hover {
     color: var(--secondary-color);
     text-decoration: none;
@@ -1318,7 +1333,6 @@ section.blog-section h2 {
 @media only screen and (max-width:992px) {
     .blog-card {
         height: initial;
-        margin-bottom: 40px;
     }
 
     .blog-section {
@@ -1328,7 +1342,7 @@ section.blog-section h2 {
 
 @media (max-width: 600px) {
     .blog-img img {
-        height: 150px;
+        height: 200px;
     }
 }
 
