@@ -285,7 +285,7 @@ html {
 .site-background .name h1 {
     font-size: 5em;
     font-weight: 700;
-    color: #c4cfde;
+    color: var(--secondary-color);
     text-align: center
 }
 
@@ -1368,9 +1368,9 @@ section.blog-section h2 {
 }
 
 .site-background .inner-page-head h1 {
-    font-size: 5em;
+    font-size: 4em;
     font-weight: 700;
-    color: #c4cfde;
+    color: var(--secondary-color);
     text-align: center;
 }
 
