@@ -1384,3 +1384,16 @@ section.blog-section h2 {
 .test-background.inner-header-wrapper {
     height: initial;
 }
+
+
+
+.site-background.blog .inner-page-head h1 {
+    font-size: 2em;
+}
+
+.site-background.blog .inner-page-head p {
+    font-size: 16px;
+    text-align: center;
+    margin-top: 20px;
+    color: var(--secondary-color);
+}
