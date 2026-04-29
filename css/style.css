@@ -1298,6 +1298,10 @@ section.blog-section h2 {
     font-size: 16px;
     color: var(--secondary-color);
     margin-bottom: 15px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
 }
 
 .blog-btn {
