@@ -82,25 +82,52 @@
 
   <!-- NAVBAR -->
   <header class="fixed top-0 w-full z-50">
-    <nav
-      class="max-w-7xl mx-auto px-6 py-4 rounded-2xl mt-4 bg-white/20 backdrop-blur-xl border border-white/30 shadow-lg">
+    <nav class="max-w-7xl mx-auto px-10 py-4 rounded-full mt-4 bg-white/50 backdrop-blur-xl border border-white/50">
+
       <div class="flex justify-between items-center">
 
         <!-- LOGO -->
-        <a href="index.html" class="text-xl font-semibold">
-          <img src="images/logo.png" class="w-12" alt="Aritra Roy Logo">
+        <a href="index.html"
+          class="bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent text-xl no-underline hover:no-underline hover:text-blue-500 font-extrabold">
+          ARITRA
         </a>
 
-        <!-- LINKS -->
+        <!-- DESKTOP MENU -->
         <div class="hidden md:flex space-x-8 text-sm font-medium">
-          <a href="index.html" class="no-underline hover:no-underline text-slate-900 hover:text-blue-600">Home</a>
-          <a href="#" class="no-underline hover:no-underline text-slate-900 hover:text-blue-600">About</a>
-          <a href="#" class="no-underline hover:no-underline text-slate-900 hover:text-blue-600">Skills</a>
-          <a href="#" class="no-underline hover:no-underline text-slate-900 hover:text-blue-600">Experience</a>
-          <a href="blogs.html" class="no-underline hover:no-underline text-blue-600">Blogs</a>
-          <a href="#" class="no-underline hover:no-underline text-slate-900 hover:text-blue-600">Contact</a>
+          <a href="index.html" class="hover:text-blue-500">Home</a>
+          <a href="#" class="hover:text-blue-500">About</a>
+          <a href="#" class="hover:text-blue-500">Skills</a>
+          <a href="#" class="hover:text-blue-500">Experience</a>
+          <a href="blogs.html" class="text-blue-500">Blogs</a>
+          <a href="#" class="hover:text-blue-500">Contact</a>
         </div>
+
+        <!-- MOBILE MENU BUTTON -->
+        <button id="menu-btn" class="md:hidden focus:outline-none">
+          <svg id="menu-open" class="w-7 h-7" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+
+          <svg id="menu-close" class="w-7 h-7 hidden" fill="none" stroke="currentColor" stroke-width="2"
+            viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+
       </div>
+
+      <!-- MOBILE MENU PANEL -->
+      <div id="mobile-menu" class="hidden md:hidden flex flex-col mt-4 space-y-4 text-sm font-medium
+                      bg-white/40 backdrop-blur-xl p-4 rounded-xl border border-white/30">
+
+        <a href="index.html" class="text-blue-500">Home</a>
+        <a href="#" class="hover:text-blue-500">About</a>
+        <a href="#" class="hover:text-blue-500">Skills</a>
+        <a href="#" class="hover:text-blue-500">Experience</a>
+        <a href="blogs.html" class="hover:text-blue-500">Blogs</a>
+        <a href="#" class="hover:text-blue-500">Contact</a>
+      </div>
+
     </nav>
   </header>
 
