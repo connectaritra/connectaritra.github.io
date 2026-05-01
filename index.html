@@ -91,9 +91,9 @@
 </head>
 
 
-<body class="bg-gradient-to-br from-blue-50 via-white to-cyan-50 text-slate-600">
+<body class="text-slate-600">
 
-  <section>
+  <section class="bg-gradient-to-br from-blue-50 via-white to-purple-50 ">
     <!--CSS Spinner-->
     <div class="spinner-wrapper">
       <div class="spinner"></div>
@@ -105,8 +105,7 @@
 
     <!-- NAVBAR -->
     <header class="fixed top-0 w-full z-50">
-      <nav class="max-w-7xl mx-auto px-6 py-4 rounded-2xl mt-4
-            bg-white/20 backdrop-blur-xl border border-white/30 shadow-lg">
+      <nav class="max-w-7xl mx-auto px-10 py-4 rounded-full mt-4 bg-white/50 backdrop-blur-xl border border-white/50">
 
         <div class="flex justify-between items-center">
 
@@ -162,13 +161,20 @@
     <section class="max-w-7xl mx-auto px-6 pb-20 grid md:grid-cols-2 gap-12 items-center">
       <!-- Left Text -->
       <div>
-        <h1 class="text-5xl md:text-6xl text-slate-900 font-extrabold leading-tight">
-          Hi, I'm <span class="bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent">Aritra
-            Roy</span>
-          UI/UX Designer
+        <h1 class="text-xl text-slate-900 font-extrabold leading-tight">
+          Hello.
+          <span class="text-5xl md:text-6xl block">
+            I'm <span class="bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent">Aritra
+              Roy</span>
+          </span>
+
+          <!-- Typing Text -->
+          <span class="block text-3xl mt-4">
+            UI/UX Designer
+          </span>
         </h1>
 
-        <p class="mt-6 text-lg text-slate-600">
+        <p class="mt-10 text-lg text-slate-600">
           I design clean, user-friendly digital experiences and build modern interfaces
           with strong visual appeal and smooth usability.
         </p>
@@ -195,25 +201,46 @@
 
 
   <!-- ABOUT PREVIEW -->
-  <section class="max-w-7xl mx-auto px-6">
-    <div class="bg-white/20 backdrop-blur-xl border border-white/30 rounded-3xl p-10">
+  <section class="relative max-w-7xl mx-auto px-6 mt-24">
 
-      <h2 class="text-4xl font-bold text-center text-slate-900">About Me</h2>
-      <p class="text-center text-slate-600 text-lg mt-4">
-        I’m Aritra Roy, a UI/UX Designer based in Kolkata, India. I specialize in crafting visually clean, accessible,
-        and
-        user-friendly digital products using Figma. Over the years, I’ve designed websites, dashboards, mobile apps, and
-        complete end-to-end UX flows that solve real user problems.
-      </p>
+    <!-- Soft Animated Background Elements -->
+    <div class="absolute -top-10 -left-10 w-72 h-72 bg-purple-500/20 blur-3xl rounded-full animate-pulse -z-10"></div>
+    <div class="absolute top-20 right-0 w-56 h-56 bg-blue-500/20 blur-3xl rounded-full animate-floating -z-10"></div>
 
-      <p class="text-center text-slate-600 text-lg mt-4">
-        Passionate Designer & Developer who loves simplicity in things and crafts beautiful user interfaces with ❤. My
-        main
-        focus is on creating user-friendly designs that are easy to navigate and visually appealing. I am known for my
-        attention
-        to detail, and ability to come up with innovative designs.
-      </p>
+    <!-- Main Card -->
+    <div class="bg-white/20 backdrop-blur-xl p-10 transition duration-500">
 
+      <!-- Section Title -->
+      <div class="text-center">
+        <h2
+          class="inline-block text-4xl md:text-5xl font-extrabold text-center bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent">
+          About Me
+        </h2>
+      </div>
+
+      <!-- Content -->
+      <div class="mt-8 space-y-6 text-center">
+
+        <p class="text-lg text-slate-700 leading-relaxed">
+          I’m <span class="text-slate-900 font-bold">Aritra Roy</span>, a UI/UX Designer based in Kolkata, India. I
+          specialize in crafting visually clean, accessible,
+          and
+          user-friendly digital products using Figma. Over the years, I’ve designed websites, dashboards, mobile apps,
+          and
+          complete end-to-end UX flows that solve real user problems.
+        </p>
+
+        <p class="text-lg text-slate-700 leading-relaxed">
+          Passionate Designer & Developer who loves simplicity in things and crafts beautiful user interfaces with
+          <span class="text-red-500">❤</span>.
+          My
+          main
+          focus is on creating user-friendly designs that are easy to navigate and visually appealing. I am known for my
+          attention
+          to detail, and ability to come up with innovative designs.
+        </p>
+
+      </div>
     </div>
   </section>
   <!--end about me-->
@@ -221,160 +248,168 @@
 
 
 
-  <section class="max-w-7xl mx-auto px-6 mt-32">
-    <div class="text-center mb-12">
-      <h2 class="text-4xl font-bold mb-4 text-slate-900">My Skills</h2>
+  <section class="mt-20 bg-gradient-to-br from-purple-50 via-white to-blue-50 py-20">
+    <div class="max-w-7xl mx-auto px-6 text-center mb-12">
+      <h2 class="text-4xl font-extrabold mb-4 text-slate-900">My Skills</h2>
       <p class="text-slate-600 max-w-3xl mx-auto">
         I combine user-friendly interfaces (UI) precision, user experiences (UX) strategy,
         and customer experience (CX) thinking to design solutions that help users achieve
         their goals smoothly.
       </p>
     </div>
+
+    <div class="max-w-7xl mx-auto px-6 flex flex-wrap items-center justify-center gap-6 max-w-6xl mx-auto px-6">
+
+      <!-- Skill Item -->
+      <div class="skill-pill">
+        <img src="images/figma.svg" class="h-10 w-10" />
+        <span>Figma</span>
+      </div>
+
+      <div class="skill-pill">
+        <img src="images/adobe-xd.svg" class="h-10 w-10" />
+        <span>Adobe XD</span>
+      </div>
+
+      <div class="skill-pill">
+        <img src="images/html.svg" class="h-10 w-10" />
+        <span>HTML</span>
+      </div>
+
+      <div class="skill-pill">
+        <img src="images/css.svg" class="h-10 w-10" />
+        <span>CSS</span>
+      </div>
+
+      <div class="skill-pill">
+        <img src="images/bootstrap.svg" class="h-10 w-10" />
+        <span>Bootstrap</span>
+      </div>
+
+      <div class="skill-pill">
+        <img src="images/tailwind.svg" class="h-10 w-10" />
+        <span>Tailwind</span>
+      </div>
+
+      <div class="skill-pill">
+        <img src="images/materialize.svg" class="h-10 w-10" />
+        <span>Materialize</span>
+      </div>
+
+      <div class="skill-pill">
+        <img src="images/javascript.svg" class="h-10 w-10" />
+        <span>JavaScript</span>
+      </div>
+
+      <div class="skill-pill">
+        <img src="images/quasar.svg" class="h-10 w-10" />
+        <span>Quasar</span>
+      </div>
+
+      <div class="skill-pill">
+        <img src="images/github.svg" class="h-10 w-10 invert" />
+        <span>GitHub</span>
+      </div>
+
+      <div class="skill-pill">
+        <img src="images/adobe-photoshop.svg" class="h-10 w-10" />
+        <span>Photoshop</span>
+      </div>
+
+      <div class="skill-pill">
+        <img src="images/adobe-illustrator.svg" class="h-10 w-10" />
+        <span>Illustrator</span>
+      </div>
+    </div>
+
+    <div class="max-w-7xl mx-auto px-6 mt-32">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+
+        <!-- CARD 1 -->
+        <div
+          class="backdrop-blur-xl bg-white/60 border border-white/50 shadow-md p-6 rounded-2xl transition-all duration-300 hover:shadow-xl hover:border-blue-300/60">
+          <h3 class="text-xl font-semibold mb-4 text-slate-900">Tools & Creative Software</h3>
+          <ul class="space-y-2 text-slate-600">
+            <li class="flex items-center gap-2">
+              <span class="w-2 h-2 rounded-full bg-blue-500"></span> Figma
+            </li>
+            <li class="flex items-center gap-2">
+              <span class="w-2 h-2 rounded-full bg-blue-500"></span> Adobe XD
+            </li>
+            <li class="flex items-center gap-2">
+              <span class="w-2 h-2 rounded-full bg-blue-500"></span> Adobe Photoshop
+            </li>
+            <li class="flex items-center gap-2">
+              <span class="w-2 h-2 rounded-full bg-blue-500"></span> Adobe Illustrator
+            </li>
+            <li class="flex items-center gap-2">
+              <span class="w-2 h-2 rounded-full bg-blue-500"></span> GitHub
+            </li>
+          </ul>
+        </div>
+
+        <!-- CARD 2 -->
+        <div
+          class="backdrop-blur-xl bg-white/60 border border-white/50 shadow-md p-6 rounded-2xl transition-all duration-300 hover:shadow-xl hover:border-blue-300/60">
+          <h3 class="text-xl font-semibold mb-4 text-slate-900">UX Research & Strategy</h3>
+          <ul class="space-y-2 text-slate-600">
+            <li class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-blue-500"></span> User Research
+            </li>
+            <li class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-blue-500"></span> User Flows</li>
+            <li class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-blue-500"></span> User Personas
+            </li>
+            <li class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-blue-500"></span> Journey Mapping
+            </li>
+            <li class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-blue-500"></span> Heuristic
+              Evaluation
+            </li>
+            <li class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-blue-500"></span> Usability Testing
+            </li>
+          </ul>
+        </div>
+
+        <!-- CARD 3 -->
+        <div
+          class="backdrop-blur-xl bg-white/60 border border-white/50 shadow-md p-6 rounded-2xl transition-all duration-300 hover:shadow-xl hover:border-blue-300/60">
+          <h3 class="text-xl font-semibold mb-4 text-slate-900">Frontend & Responsive</h3>
+          <ul class="space-y-2 text-slate-600">
+            <li class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-blue-500"></span> HTML</li>
+            <li class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-blue-500"></span> CSS</li>
+            <li class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-blue-500"></span> Tailwind CSS</li>
+            <li class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-blue-500"></span> Bootstrap</li>
+            <li class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-blue-500"></span> Media Queries
+            </li>
+            <li class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-blue-500"></span> Responsive Design
+            </li>
+          </ul>
+        </div>
+
+        <!-- CARD 4 -->
+        <div
+          class="backdrop-blur-xl bg-white/60 border border-white/50 shadow-md p-6 rounded-2xl transition-all duration-300 hover:shadow-xl hover:border-blue-300/60">
+          <h3 class="text-xl font-semibold mb-4 text-slate-900">UI/UX Design Skills</h3>
+          <ul class="space-y-2 text-slate-600">
+            <li class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-blue-500"></span> Wireframing</li>
+            <li class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-blue-500"></span> Prototyping</li>
+            <li class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-blue-500"></span> Smart Animate
+            </li>
+            <li class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-blue-500"></span> Component
+              Variants
+            </li>
+            <li class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-blue-500"></span> Interaction
+              Design
+            </li>
+            <li class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-blue-500"></span> Product Design
+            </li>
+
+          </ul>
+        </div>
+
+      </div>
+    </div>
   </section>
 
-  <div class="flex flex-wrap items-center justify-center gap-6 max-w-6xl mx-auto px-6">
 
-    <!-- Skill Item -->
-    <div class="skill-pill">
-      <img src="images/figma.svg" class="h-10 w-10" />
-      <span>Figma</span>
-    </div>
-
-    <div class="skill-pill">
-      <img src="images/adobe-xd.svg" class="h-10 w-10" />
-      <span>Adobe XD</span>
-    </div>
-
-    <div class="skill-pill">
-      <img src="images/html.svg" class="h-10 w-10" />
-      <span>HTML</span>
-    </div>
-
-    <div class="skill-pill">
-      <img src="images/css.svg" class="h-10 w-10" />
-      <span>CSS</span>
-    </div>
-
-    <div class="skill-pill">
-      <img src="images/bootstrap.svg" class="h-10 w-10" />
-      <span>Bootstrap</span>
-    </div>
-
-    <div class="skill-pill">
-      <img src="images/tailwind.svg" class="h-10 w-10" />
-      <span>Tailwind</span>
-    </div>
-
-    <div class="skill-pill">
-      <img src="images/materialize.svg" class="h-10 w-10" />
-      <span>Materialize</span>
-    </div>
-
-    <div class="skill-pill">
-      <img src="images/javascript.svg" class="h-10 w-10" />
-      <span>JavaScript</span>
-    </div>
-
-    <div class="skill-pill">
-      <img src="images/quasar.svg" class="h-10 w-10" />
-      <span>Quasar</span>
-    </div>
-
-    <div class="skill-pill">
-      <img src="images/github.svg" class="h-10 w-10 invert" />
-      <span>GitHub</span>
-    </div>
-
-    <div class="skill-pill">
-      <img src="images/adobe-photoshop.svg" class="h-10 w-10" />
-      <span>Photoshop</span>
-    </div>
-
-    <div class="skill-pill">
-      <img src="images/adobe-illustrator.svg" class="h-10 w-10" />
-      <span>Illustrator</span>
-    </div>
-  </div>
-
-
-  <section class="max-w-7xl mx-auto px-6 mt-32">
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-
-      <!-- CARD 1 -->
-      <div
-        class="backdrop-blur-xl bg-white/60 border border-white/50 shadow-md p-6 rounded-2xl transition-all duration-300 hover:shadow-xl hover:border-blue-300/60">
-        <h3 class="text-xl font-semibold mb-4 text-slate-900">Tools & Creative Software</h3>
-        <ul class="space-y-2 text-slate-600">
-          <li class="flex items-center gap-2">
-            <span class="w-2 h-2 rounded-full bg-blue-500"></span> Figma
-          </li>
-          <li class="flex items-center gap-2">
-            <span class="w-2 h-2 rounded-full bg-blue-500"></span> Adobe XD
-          </li>
-          <li class="flex items-center gap-2">
-            <span class="w-2 h-2 rounded-full bg-blue-500"></span> Adobe Photoshop
-          </li>
-          <li class="flex items-center gap-2">
-            <span class="w-2 h-2 rounded-full bg-blue-500"></span> Adobe Illustrator
-          </li>
-          <li class="flex items-center gap-2">
-            <span class="w-2 h-2 rounded-full bg-blue-500"></span> GitHub
-          </li>
-        </ul>
-      </div>
-
-      <!-- CARD 2 -->
-      <div
-        class="backdrop-blur-xl bg-white/60 border border-white/50 shadow-md p-6 rounded-2xl transition-all duration-300 hover:shadow-xl hover:border-blue-300/60">
-        <h3 class="text-xl font-semibold mb-4 text-slate-900">UX Research & Strategy</h3>
-        <ul class="space-y-2 text-slate-600">
-          <li class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-blue-500"></span> User Research</li>
-          <li class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-blue-500"></span> User Flows</li>
-          <li class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-blue-500"></span> User Personas</li>
-          <li class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-blue-500"></span> Journey Mapping
-          </li>
-          <li class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-blue-500"></span> Heuristic
-            Evaluation
-          </li>
-          <li class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-blue-500"></span> Usability Testing
-          </li>
-        </ul>
-      </div>
-
-      <!-- CARD 3 -->
-      <div
-        class="backdrop-blur-xl bg-white/60 border border-white/50 shadow-md p-6 rounded-2xl transition-all duration-300 hover:shadow-xl hover:border-blue-300/60">
-        <h3 class="text-xl font-semibold mb-4 text-slate-900">Frontend & Responsive</h3>
-        <ul class="space-y-2 text-slate-600">
-          <li class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-blue-500"></span> HTML</li>
-          <li class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-blue-500"></span> CSS</li>
-          <li class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-blue-500"></span> Tailwind CSS</li>
-          <li class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-blue-500"></span> Bootstrap</li>
-          <li class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-blue-500"></span> Media Queries</li>
-          <li class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-blue-500"></span> Responsive Design
-          </li>
-        </ul>
-      </div>
-
-      <!-- CARD 4 -->
-      <div
-        class="backdrop-blur-xl bg-white/60 border border-white/50 shadow-md p-6 rounded-2xl transition-all duration-300 hover:shadow-xl hover:border-blue-300/60">
-        <h3 class="text-xl font-semibold mb-4 text-slate-900">UI/UX Design Skills</h3>
-        <ul class="space-y-2 text-slate-600">
-          <li class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-blue-500"></span> Wireframing</li>
-          <li class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-blue-500"></span> Prototyping</li>
-          <li class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-blue-500"></span> Smart Animate</li>
-          <li class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-blue-500"></span> Component Variants
-          </li>
-          <li class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-blue-500"></span> Interaction Design
-          </li>
-          <li class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-blue-500"></span> Product Design</li>
-
-        </ul>
-      </div>
-
-    </div>
-  </section>
 
 
 
@@ -382,7 +417,7 @@
   <section class="max-w-7xl mx-auto px-6">
 
     <section class="max-w-5xl mx-auto px-6 mt-32">
-      <h2 class="text-4xl font-bold mb-12 text-slate-900 text-center">Work Experience</h2>
+      <h2 class="text-4xl font-extrabold mb-12 text-slate-900 text-center">Work Experience</h2>
 
       <div class="relative">
 
@@ -461,7 +496,7 @@
 
 
     <section class="mt-32">
-      <h2 class="text-4xl font-bold mb-10 text-slate-900 text-center">Certifications</h2>
+      <h2 class="text-4xl font-extrabold mb-10 text-slate-900 text-center">Certifications</h2>
 
       <div class="grid md:grid-cols-3 gap-6">
 
@@ -554,7 +589,7 @@
 
 
   <section class="max-w-7xl mx-auto px-6 mt-32">
-    <h2 class="pb-2 text-4xl font-bold text-slate-900 text-center">Latest Blogs</h2>
+    <h2 class="pb-2 text-4xl font-extrabold text-slate-900 text-center">Latest Blogs</h2>
 
     <div class="grid md:grid-cols-3 gap-8 mt-8">
 
