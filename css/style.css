@@ -130,22 +130,3 @@ p {
     background: linear-gradient(to bottom right, #2563eb, #22D3EE);
     width: 0%
 }
-
-
-@keyframes floating {
-    0% {
-        transform: translateY(0px);
-    }
-
-    50% {
-        transform: translateY(-50px);
-    }
-
-    100% {
-        transform: translateY(0px);
-    }
-}
-
-.animate-floating {
-    animation: floating 5s ease-in-out infinite;
-}
