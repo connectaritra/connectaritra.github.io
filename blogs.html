@@ -69,306 +69,312 @@
 </head>
 
 
-<body class="bg-gradient-to-br from-blue-50 via-white to-cyan-50 text-slate-600">
+<body class="text-slate-600">
+  <section class="bg-gradient-to-br from-blue-50 via-white to-purple-50 pb-24">
+    <!--CSS Spinner-->
+    <div class="spinner-wrapper">
+      <div class="spinner"></div>
+    </div>
+    <!--start site header-->
+    <div class="progress-container">
+      <div class="progress-bar" id="myBar"></div>
+    </div>
 
-  <!--CSS Spinner-->
-  <div class="spinner-wrapper">
-    <div class="spinner"></div>
-  </div>
-  <!--start site header-->
-  <div class="progress-container">
-    <div class="progress-bar" id="myBar"></div>
-  </div>
+    <!-- NAVBAR -->
+    <header class="fixed top-0 w-full z-50">
+      <nav class="max-w-7xl mx-auto px-10 py-4 rounded-full mt-4 bg-white/50 backdrop-blur-xl border border-white/50">
 
-  <!-- NAVBAR -->
-  <header class="fixed top-0 w-full z-50">
-    <nav class="max-w-7xl mx-auto px-10 py-4 rounded-full mt-4 bg-white/50 backdrop-blur-xl border border-white/50">
+        <div class="flex justify-between items-center">
 
-      <div class="flex justify-between items-center">
+          <!-- LOGO -->
+          <a href="index.html"
+            class="bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent text-xl no-underline hover:no-underline hover:text-blue-500 font-extrabold">
+            ARITRA
+          </a>
 
-        <!-- LOGO -->
-        <a href="index.html"
-          class="bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent text-xl no-underline hover:no-underline hover:text-blue-500 font-extrabold">
-          ARITRA
-        </a>
+          <!-- DESKTOP MENU -->
+          <div class="hidden md:flex space-x-8 text-sm font-medium">
+            <a href="index.html" class="hover:text-blue-500">Home</a>
+            <a href="#" class="hover:text-blue-500">About</a>
+            <a href="#" class="hover:text-blue-500">Skills</a>
+            <a href="#" class="hover:text-blue-500">Experience</a>
+            <a href="blogs.html" class="text-blue-500">Blogs</a>
+            <a href="#" class="hover:text-blue-500">Contact</a>
+          </div>
 
-        <!-- DESKTOP MENU -->
-        <div class="hidden md:flex space-x-8 text-sm font-medium">
-          <a href="index.html" class="hover:text-blue-500">Home</a>
+          <!-- MOBILE MENU BUTTON -->
+          <button id="menu-btn" class="md:hidden focus:outline-none">
+            <svg id="menu-open" class="w-7 h-7" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+
+            <svg id="menu-close" class="w-7 h-7 hidden" fill="none" stroke="currentColor" stroke-width="2"
+              viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+
+        </div>
+
+        <!-- MOBILE MENU PANEL -->
+        <div id="mobile-menu" class="hidden md:hidden flex flex-col mt-4 space-y-4 text-sm font-medium
+                      bg-white/40 backdrop-blur-xl p-4 rounded-xl border border-white/30">
+
+          <a href="index.html" class="text-blue-500">Home</a>
           <a href="#" class="hover:text-blue-500">About</a>
           <a href="#" class="hover:text-blue-500">Skills</a>
           <a href="#" class="hover:text-blue-500">Experience</a>
-          <a href="blogs.html" class="text-blue-500">Blogs</a>
+          <a href="blogs.html" class="hover:text-blue-500">Blogs</a>
           <a href="#" class="hover:text-blue-500">Contact</a>
         </div>
 
-        <!-- MOBILE MENU BUTTON -->
-        <button id="menu-btn" class="md:hidden focus:outline-none">
-          <svg id="menu-open" class="w-7 h-7" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
-          </svg>
+      </nav>
+    </header>
 
-          <svg id="menu-close" class="w-7 h-7 hidden" fill="none" stroke="currentColor" stroke-width="2"
-            viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-          </svg>
-        </button>
+    <!-- SPACER FOR FIXED NAV -->
+    <div class="h-32"></div>
 
+    <section class="max-w-7xl px-6 mx-auto mt-12">
+      <div class="text-center mb-12">
+        <h2
+          class="mb-8 inline-block text-4xl md:text-5xl font-extrabold bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent">
+          Design Articles You’ll Love</h2>
+        <p class="text-slate-600 max-w-3xl mx-auto">
+          My latest UI/UX articles explore the future of minimal design, the impact of micro-interactions. I also cover
+          the growing role of AI in UX workflows and share simple tips
+          for
+          designing clean, readable dark-mode interfaces.
+        </p>
       </div>
 
-      <!-- MOBILE MENU PANEL -->
-      <div id="mobile-menu" class="hidden md:hidden flex flex-col mt-4 space-y-4 text-sm font-medium
-                      bg-white/40 backdrop-blur-xl p-4 rounded-xl border border-white/30">
+      <div class="grid md:grid-cols-3 gap-10 ">
 
-        <a href="index.html" class="text-blue-500">Home</a>
-        <a href="#" class="hover:text-blue-500">About</a>
-        <a href="#" class="hover:text-blue-500">Skills</a>
-        <a href="#" class="hover:text-blue-500">Experience</a>
-        <a href="blogs.html" class="hover:text-blue-500">Blogs</a>
-        <a href="#" class="hover:text-blue-500">Contact</a>
-      </div>
+        <!-- BLOG CARD -->
+        <div
+          class="group rounded-3xl bg-white/60 backdrop-blur-xl border border-white/40 transition-all duration-300 overflow-hidden">
+          <div class="overflow-hidden rounded-t-3xl">
+            <img src="images/blog/blog6.png"
+              class="w-full h-56 object-cover group-hover:scale-105 transition-all duration-500" alt="Blog 6">
+          </div>
 
-    </nav>
-  </header>
+          <div class="p-6">
+            <h3 class="text-lg font-semibold text-slate-900 leading-snug">
+              <a href="https://www.linkedin.com/posts/connectaritra_uidesign-uxdesign-genz-activity-7454952394674831360-Tvjs"
+                target="_blank" class="hover:text-blue-600 transition">
+                Designing for Gen-Z: Instant Impact Wins
+              </a>
+            </h3>
+            <p class="text-slate-600 text-sm mt-2">
+              Why Gen-Z judges products in seconds and how UI/UX must adapt with bold visuals & micro-interactions.
+            </p>
 
-  <!-- SPACER FOR FIXED NAV -->
-  <div class="h-32"></div>
-
-  <section class="max-w-7xl px-6 mx-auto mt-12">
-    <h2 class="text-3xl font-bold mb-12 text-slate-900 text-center">Latest Blogs</h2>
-
-    <div class="grid md:grid-cols-3 gap-10 ">
-
-      <!-- BLOG CARD -->
-      <div
-        class="group rounded-3xl bg-white/60 backdrop-blur-xl border border-white/40 shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden">
-        <div class="overflow-hidden rounded-t-3xl">
-          <img src="images/blog/blog6.png"
-            class="w-full h-56 object-cover group-hover:scale-105 transition-all duration-500" alt="Blog 6">
-        </div>
-
-        <div class="p-6">
-          <h3 class="text-lg font-semibold text-slate-900 leading-snug">
-            <a href="https://www.linkedin.com/posts/connectaritra_uidesign-uxdesign-genz-activity-7454952394674831360-Tvjs"
-              target="_blank" class="hover:text-blue-600 transition">
-              Designing for Gen-Z: Instant Impact Wins
-            </a>
-          </h3>
-          <p class="text-slate-600 text-sm mt-2">
-            Why Gen-Z judges products in seconds and how UI/UX must adapt with bold visuals & micro-interactions.
-          </p>
-
-          <div class="text-right mt-4">
-            <a href="https://www.linkedin.com/posts/connectaritra_uidesign-uxdesign-genz-activity-7454952394674831360-Tvjs"
-              target="_blank" class="text-blue-600 font-medium hover:underline">
-              Read More →
-            </a>
+            <div class="text-right mt-4">
+              <a href="https://www.linkedin.com/posts/connectaritra_uidesign-uxdesign-genz-activity-7454952394674831360-Tvjs"
+                target="_blank" class="text-blue-600 font-medium hover:underline">
+                Read More →
+              </a>
+            </div>
           </div>
         </div>
-      </div>
 
-      <!-- CARD 2 -->
-      <div
-        class="group rounded-3xl bg-white/60 backdrop-blur-xl border border-white/40 shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden">
-        <div class="overflow-hidden rounded-t-3xl">
-          <img src="images/blog/blog5.png"
-            class="w-full h-56 object-cover group-hover:scale-105 transition-all duration-500" alt="Blog 5">
-        </div>
+        <!-- CARD 2 -->
+        <div
+          class="group rounded-3xl bg-white/60 backdrop-blur-xl border border-white/40 transition-all duration-300 overflow-hidden">
+          <div class="overflow-hidden rounded-t-3xl">
+            <img src="images/blog/blog5.png"
+              class="w-full h-56 object-cover group-hover:scale-105 transition-all duration-500" alt="Blog 5">
+          </div>
 
-        <div class="p-6">
-          <h3 class="text-lg font-semibold text-slate-900 leading-snug">
-            <a href="https://www.linkedin.com/posts/connectaritra_ui-ux-cx-activity-7452565837917523968-lAtQ"
-              target="_blank" class="hover:text-blue-600 transition">
-              UI vs UX vs CX — Finally Explained!
-            </a>
-          </h3>
-          <p class="text-slate-600 text-sm mt-2">
-            A simple breakdown of how UI, UX & CX work together to build lovable products.
-          </p>
+          <div class="p-6">
+            <h3 class="text-lg font-semibold text-slate-900 leading-snug">
+              <a href="https://www.linkedin.com/posts/connectaritra_ui-ux-cx-activity-7452565837917523968-lAtQ"
+                target="_blank" class="hover:text-blue-600 transition">
+                UI vs UX vs CX — Finally Explained!
+              </a>
+            </h3>
+            <p class="text-slate-600 text-sm mt-2">
+              A simple breakdown of how UI, UX & CX work together to build lovable products.
+            </p>
 
-          <div class="text-right mt-4">
-            <a href="https://www.linkedin.com/posts/connectaritra_ui-ux-cx-activity-7452565837917523968-lAtQ"
-              target="_blank" class="text-blue-600 font-medium hover:underline">
-              Read More →
-            </a>
+            <div class="text-right mt-4">
+              <a href="https://www.linkedin.com/posts/connectaritra_ui-ux-cx-activity-7452565837917523968-lAtQ"
+                target="_blank" class="text-blue-600 font-medium hover:underline">
+                Read More →
+              </a>
+            </div>
           </div>
         </div>
-      </div>
 
-      <!-- CARD 3 -->
-      <div
-        class="group rounded-3xl bg-white/60 backdrop-blur-xl border border-white/40 shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden">
-        <div class="overflow-hidden rounded-t-3xl">
-          <img src="images/blog/blog1.png"
-            class="w-full h-56 object-cover group-hover:scale-105 transition-all duration-500" alt="Blog 1">
-        </div>
+        <!-- CARD 3 -->
+        <div
+          class="group rounded-3xl bg-white/60 backdrop-blur-xl border border-white/40 transition-all duration-300 overflow-hidden">
+          <div class="overflow-hidden rounded-t-3xl">
+            <img src="images/blog/blog1.png"
+              class="w-full h-56 object-cover group-hover:scale-105 transition-all duration-500" alt="Blog 1">
+          </div>
 
-        <div class="p-6">
-          <h3 class="text-lg font-semibold text-slate-900 leading-snug">
-            <a href="https://www.linkedin.com/posts/connectaritra_loadingstates-uxpsychology-designbestpractices-activity-7446174671881871360-5u3_"
-              target="_blank" class="hover:text-blue-600 transition">
-              Why Skeleton Screens Improve UX More Than Spinners
-            </a>
-          </h3>
-          <p class="text-slate-600 text-sm mt-2">
-            How skeleton loaders reduce user anxiety and create smoother experiences.
-          </p>
+          <div class="p-6">
+            <h3 class="text-lg font-semibold text-slate-900 leading-snug">
+              <a href="https://www.linkedin.com/posts/connectaritra_loadingstates-uxpsychology-designbestpractices-activity-7446174671881871360-5u3_"
+                target="_blank" class="hover:text-blue-600 transition">
+                Why Skeleton Screens Improve UX More Than Spinners
+              </a>
+            </h3>
+            <p class="text-slate-600 text-sm mt-2">
+              How skeleton loaders reduce user anxiety and create smoother experiences.
+            </p>
 
-          <div class="text-right mt-4">
-            <a href="https://www.linkedin.com/posts/connectaritra_loadingstates-uxpsychology-designbestpractices-activity-7446174671881871360-5u3_"
-              target="_blank" class="text-blue-600 font-medium hover:underline">
-              Read More →
-            </a>
+            <div class="text-right mt-4">
+              <a href="https://www.linkedin.com/posts/connectaritra_loadingstates-uxpsychology-designbestpractices-activity-7446174671881871360-5u3_"
+                target="_blank" class="text-blue-600 font-medium hover:underline">
+                Read More →
+              </a>
+            </div>
           </div>
         </div>
-      </div>
 
-      <!-- BLOG 4 -->
-      <div
-        class="group rounded-3xl bg-white/60 backdrop-blur-xl border border-white/40 shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden">
-        <div class="overflow-hidden rounded-t-3xl">
-          <img src="images/blog/blog2.png"
-            class="w-full h-56 object-cover group-hover:scale-105 transition-all duration-500" alt="Blog 2">
-        </div>
+        <!-- BLOG 4 -->
+        <div
+          class="group rounded-3xl bg-white/60 backdrop-blur-xl border border-white/40 transition-all duration-300 overflow-hidden">
+          <div class="overflow-hidden rounded-t-3xl">
+            <img src="images/blog/blog2.png"
+              class="w-full h-56 object-cover group-hover:scale-105 transition-all duration-500" alt="Blog 2">
+          </div>
 
-        <div class="p-6">
-          <h3 class="text-lg font-semibold text-slate-900 leading-snug">
-            <a href="https://www.linkedin.com/posts/connectaritra_webdesign-uiuxdesign-microinteractions-activity-7436811049011662849-7rro"
-              target="_blank" class="hover:text-blue-600 transition">
-              Figma Smart Animate — Master Micro-Interactions
-            </a>
-          </h3>
-          <p class="text-slate-600 text-sm mt-2">
-            How micro-interactions make your UI feel alive & intuitive.
-          </p>
+          <div class="p-6">
+            <h3 class="text-lg font-semibold text-slate-900 leading-snug">
+              <a href="https://www.linkedin.com/posts/connectaritra_webdesign-uiuxdesign-microinteractions-activity-7436811049011662849-7rro"
+                target="_blank" class="hover:text-blue-600 transition">
+                Figma Smart Animate — Master Micro-Interactions
+              </a>
+            </h3>
+            <p class="text-slate-600 text-sm mt-2">
+              How micro-interactions make your UI feel alive & intuitive.
+            </p>
 
-          <div class="text-right mt-4">
-            <a href="https://www.linkedin.com/posts/connectaritra_webdesign-uiuxdesign-microinteractions-activity-7436811049011662849-7rro"
-              target="_blank" class="text-blue-600 font-medium hover:underline">
-              Read More →
-            </a>
+            <div class="text-right mt-4">
+              <a href="https://www.linkedin.com/posts/connectaritra_webdesign-uiuxdesign-microinteractions-activity-7436811049011662849-7rro"
+                target="_blank" class="text-blue-600 font-medium hover:underline">
+                Read More →
+              </a>
+            </div>
           </div>
         </div>
-      </div>
 
-      <!-- BLOG 5 -->
-      <div
-        class="group rounded-3xl bg-white/60 backdrop-blur-xl border border-white/40 shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden">
-        <div class="overflow-hidden rounded-t-3xl">
-          <img src="images/blog/blog3.png"
-            class="w-full h-56 object-cover group-hover:scale-105 transition-all duration-500" alt="Blog 3">
-        </div>
+        <!-- BLOG 5 -->
+        <div
+          class="group rounded-3xl bg-white/60 backdrop-blur-xl border border-white/40 transition-all duration-300 overflow-hidden">
+          <div class="overflow-hidden rounded-t-3xl">
+            <img src="images/blog/blog3.png"
+              class="w-full h-56 object-cover group-hover:scale-105 transition-all duration-500" alt="Blog 3">
+          </div>
 
-        <div class="p-6">
-          <h3 class="text-lg font-semibold text-slate-900 leading-snug">
-            <a href="https://www.linkedin.com/posts/connectaritra_uidesign-uxdesign-mobiledesign-activity-7431953893607034880-phoL"
-              target="_blank" class="hover:text-blue-600 transition">
-              Why Do All Mobile Designs Show 9:15 or 9:41?
-            </a>
-          </h3>
-          <p class="text-slate-600 text-sm mt-2">
-            The hidden story behind the famous mobile UI time convention.
-          </p>
+          <div class="p-6">
+            <h3 class="text-lg font-semibold text-slate-900 leading-snug">
+              <a href="https://www.linkedin.com/posts/connectaritra_uidesign-uxdesign-mobiledesign-activity-7431953893607034880-phoL"
+                target="_blank" class="hover:text-blue-600 transition">
+                Why Do All Mobile Designs Show 9:15 or 9:41?
+              </a>
+            </h3>
+            <p class="text-slate-600 text-sm mt-2">
+              The hidden story behind the famous mobile UI time convention.
+            </p>
 
-          <div class="text-right mt-4">
-            <a href="https://www.linkedin.com/posts/connectaritra_uidesign-uxdesign-mobiledesign-activity-7431953893607034880-phoL"
-              target="_blank" class="text-blue-600 font-medium hover:underline">
-              Read More →
-            </a>
+            <div class="text-right mt-4">
+              <a href="https://www.linkedin.com/posts/connectaritra_uidesign-uxdesign-mobiledesign-activity-7431953893607034880-phoL"
+                target="_blank" class="text-blue-600 font-medium hover:underline">
+                Read More →
+              </a>
+            </div>
           </div>
         </div>
-      </div>
 
-      <!-- BLOG 6 -->
-      <div
-        class="group rounded-3xl bg-white/60 backdrop-blur-xl border border-white/40 shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden">
-        <div class="overflow-hidden rounded-t-3xl">
-          <img src="images/blog/blog4.jpg"
-            class="w-full h-56 object-cover group-hover:scale-105 transition-all duration-500" alt="Blog 4" />
-        </div>
+        <!-- BLOG 6 -->
+        <div
+          class="group rounded-3xl bg-white/60 backdrop-blur-xl border border-white/40 transition-all duration-300 overflow-hidden">
+          <div class="overflow-hidden rounded-t-3xl">
+            <img src="images/blog/blog4.jpg"
+              class="w-full h-56 object-cover group-hover:scale-105 transition-all duration-500" alt="Blog 4" />
+          </div>
 
-        <div class="p-6">
-          <h3 class="text-lg font-semibold text-slate-900 leading-snug">
-            <a href="https://www.linkedin.com/posts/connectaritra_uxdesign-uiux-designthinking-activity-7399518874519662592-n9Ui"
-              target="_blank" class="hover:text-blue-600 transition">
-              Why Mobile Keypads Use This Number Pattern?
-            </a>
-          </h3>
-          <p class="text-slate-600 text-sm mt-2">
-            A design decision influenced by legacy devices & human mental models.
-          </p>
+          <div class="p-6">
+            <h3 class="text-lg font-semibold text-slate-900 leading-snug">
+              <a href="https://www.linkedin.com/posts/connectaritra_uxdesign-uiux-designthinking-activity-7399518874519662592-n9Ui"
+                target="_blank" class="hover:text-blue-600 transition">
+                Why Mobile Keypads Use This Number Pattern?
+              </a>
+            </h3>
+            <p class="text-slate-600 text-sm mt-2">
+              A design decision influenced by legacy devices & human mental models.
+            </p>
 
-          <div class="text-right mt-4">
-            <a href="https://www.linkedin.com/posts/connectaritra_uxdesign-uiux-designthinking-activity-7399518874519662592-n9Ui"
-              target="_blank" class="text-blue-600 font-medium hover:underline">
-              Read More →
-            </a>
+            <div class="text-right mt-4">
+              <a href="https://www.linkedin.com/posts/connectaritra_uxdesign-uiux-designthinking-activity-7399518874519662592-n9Ui"
+                target="_blank" class="text-blue-600 font-medium hover:underline">
+                Read More →
+              </a>
+            </div>
           </div>
         </div>
-      </div>
 
-    </div>
+      </div>
+    </section>
   </section>
-
 
 
   <!-- Hire Me Section -->
-  <section class="max-w-7xl mx-auto px-6 mt-32">
+  <section class="max-w-7xl mx-auto px-6 py-24">
+    <h2 class="text-4xl md:text-5xl text-center font-extrabold text-slate-900 leading-tight mb-8">
+      Finding <span class="text-blue-500">Joy</span> in Your Work is Essential for Achieving
+      <span class="text-purple-500">Excellence</span>.
+    </h2>
 
-    <div>
+    <p class="text-center mx-auto leading-relaxed text-[15px] text-slate-600">
+      That's why I understand that building a website is not just about creating a pretty design or adding
+      fancy features. The real goal is to help you build your business with creative, flexible UX design
+      that aligns with your brand vision and business needs.
+    </p>
 
-      <h2 class="text-3xl md:text-4xl text-center font-bold text-slate-900 leading-tight mb-6">
-        Finding <span class="text-cyan-400">joy</span> in your work is essential for achieving
-        <span class="text-pink-400">excellence</span>.
-      </h2>
+    <!-- Social Icons -->
+    <div class="mt-10">
+      <p class="text-xl font-semibold mt-20 mb-4 text-slate-900 text-center">Connect me through</p>
 
-      <p class="text-center mx-auto leading-relaxed text-[15px] text-slate-600">
-        That's why I understand that building a website is not just about creating a pretty design or adding
-        fancy features. The real goal is to help you build your business with creative, flexible UX design
-        that aligns with your brand vision and business needs.
-      </p>
+      <div class="flex items-center justify-center gap-5">
 
-      <!-- Social Icons -->
-      <div class="mt-10">
-        <p class="text-xl font-semibold mt-20 mb-4 text-slate-900 text-center">Connect me through</p>
+        <!-- Email -->
+        <a href="mailto:web.aritra@gmail.com"
+          class="no-underline hover:no-underline w-12 h-12 flex items-center justify-center rounded-xl bg-gradient-to-br from-blue-500 to-purple-500 text-white shadow-md">
+          <i class="fa-regular fa-envelope"></i>
+        </a>
 
-        <div class="flex items-center justify-center gap-5">
+        <!-- LinkedIn -->
+        <a href="https://www.linkedin.com/in/connectaritra" target="_blank" rel="noopener"
+          class="no-underline hover:no-underline w-12 h-12 flex items-center justify-center rounded-xl bg-gradient-to-br from-blue-500 to-purple-500 text-white shadow-md">
+          <i class="fa-brands fa-linkedin-in"></i>
+        </a>
 
-          <!-- Email -->
-          <a href="mailto:web.aritra@gmail.com"
-            class="no-underline hover:no-underline w-12 h-12 flex items-center justify-center rounded-xl bg-gradient-to-br from-blue-500 to-cyan-400 text-white shadow-md">
-            <i class="fa-regular fa-envelope"></i>
-          </a>
+        <!-- Dribbble -->
+        <a href="https://dribbble.com/connectaritra" target="_blank" rel="noopener"
+          class="no-underline hover:no-underline w-12 h-12 flex items-center justify-center rounded-xl bg-gradient-to-br from-blue-500 to-purple-500 text-white shadow-md">
+          <i class="fa-solid fa-basketball"></i>
+        </a>
 
-          <!-- LinkedIn -->
-          <a href="https://www.linkedin.com/in/connectaritra" target="_blank" rel="noopener"
-            class="no-underline hover:no-underline w-12 h-12 flex items-center justify-center rounded-xl bg-gradient-to-br from-blue-500 to-cyan-400 text-white shadow-md">
-            <i class="fa-brands fa-linkedin-in"></i>
-          </a>
-
-          <!-- Dribbble -->
-          <a href="https://dribbble.com/connectaritra" target="_blank" rel="noopener"
-            class="no-underline hover:no-underline w-12 h-12 flex items-center justify-center rounded-xl bg-gradient-to-br from-blue-500 to-cyan-400 text-white shadow-md">
-            <i class="fa-solid fa-basketball"></i>
-          </a>
-
-        </div>
       </div>
-
     </div>
+
   </section>
 
   <!-- Tagline -->
-  <div class="max-w-7xl mx-auto px-6 mt-12 py-6 text-center bg-white/5 backdrop-blur-xl border-t border-white/10">
-    <h6 class="text-slate-600 text-sm">
-      Aritra Roy – UI/UX Designer based in Kolkata, India • Portfolio: aritraroy.com
-    </h6>
-  </div>
+  <Section class="bg-gradient-to-br from-purple-50 via-white to-blue-50">
+    <div class="max-w-7xl mx-auto px-6 py-6 text-center bg-white/5 backdrop-blur-xl border-t border-white/10">
+      <h6 class="text-slate-600 text-sm">
+        Aritra Roy – UI/UX Designer based in Kolkata, India • Portfolio: aritraroy.com
+      </h6>
+    </div>
+  </Section>
 
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 
 
 
@@ -400,6 +406,20 @@
       }
       hidePreloader();
 
+    });
+  </script>
+
+  <!-- JS: Toggle Menu -->
+  <script>
+    const menuBtn = document.getElementById("menu-btn");
+    const mobileMenu = document.getElementById("mobile-menu");
+    const menuOpen = document.getElementById("menu-open");
+    const menuClose = document.getElementById("menu-close");
+
+    menuBtn.addEventListener("click", () => {
+      mobileMenu.classList.toggle("hidden");
+      menuOpen.classList.toggle("hidden");
+      menuClose.classList.toggle("hidden");
     });
   </script>
 
