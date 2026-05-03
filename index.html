@@ -96,8 +96,11 @@
 
 
 <body class="text-slate-600">
+  <section class="relative bg-gradient-to-br from-blue-50 via-white to-purple-50 overflow-hidden">
 
-  <section class="relative bg-gradient-to-br from-blue-50 via-white to-purple-50 ">
+    <div class="hero-background">
+      <div class="particles-container" id="particles"></div>
+    </div>
 
     <!--CSS Spinner-->
     <div class="spinner-wrapper">
@@ -161,7 +164,7 @@
 
 
     <!-- HERO SECTION -->
-    <section class="max-w-7xl mx-auto px-6 pb-24 pt-52 text-center">
+    <section class="max-w-7xl relative z-10 mx-auto px-6 pb-24 pt-52 text-center">
       <h1 class="text-xl text-slate-900 font-extrabold leading-tight">
         Hello.
         <span class="text-5xl md:text-6xl block mt-2">
@@ -374,93 +377,113 @@
       </div>
     </div>
 
-    <div class="max-w-7xl mx-auto px-6 mt-32">
+    <div class="max-w-7xl mx-auto px-6 my-24">
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
 
-        <!-- CARD 1 -->
-        <div
-          class="backdrop-blur-xl bg-white/60 border border-white/50 shadow-md p-6 rounded-2xl transition-all duration-300 hover:shadow-xl hover:border-blue-300/60">
-          <h3 class="text-xl font-semibold mb-4 text-slate-900">Tools & Creative Software</h3>
-          <ul class="space-y-2 text-slate-600">
-            <li class="flex items-center gap-2">
-              <span class="w-2 h-2 rounded-full bg-blue-500"></span> Figma
-            </li>
-            <li class="flex items-center gap-2">
-              <span class="w-2 h-2 rounded-full bg-blue-500"></span> Adobe XD
-            </li>
-            <li class="flex items-center gap-2">
-              <span class="w-2 h-2 rounded-full bg-blue-500"></span> Adobe Photoshop
-            </li>
-            <li class="flex items-center gap-2">
-              <span class="w-2 h-2 rounded-full bg-blue-500"></span> Adobe Illustrator
-            </li>
-            <li class="flex items-center gap-2">
-              <span class="w-2 h-2 rounded-full bg-blue-500"></span> GitHub
-            </li>
-          </ul>
+        <!-- CARD 1-->
+        <div class="relative rounded-2xl p-[1px] overflow-hidden">
+          <!-- SMOOTH ROTATING BORDER -->
+          <div class="absolute inset-0 rounded-2xl animate-rotate-smooth 
+               bg-[radial-gradient(circle_at_center,_#3b82f6,_#a855f7)] opacity-70 blur-[10px]">
+          </div>
+          <!-- INNER CONTENT -->
+          <div class="relative rounded-2xl backdrop-blur-xl bg-white/95 h-full p-6">
+            <h3 class="text-xl font-semibold mb-4 text-slate-900">Tools & Creative Software</h3>
+            <ul class="space-y-2 text-slate-600">
+              <li class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-blue-500"></span> Figma</li>
+              <li class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-blue-500"></span> Adobe XD</li>
+              <li class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-blue-500"></span> Adobe Photoshop
+              </li>
+              <li class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-blue-500"></span> Adobe
+                Illustrator</li>
+              <li class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-blue-500"></span> GitHub</li>
+            </ul>
+          </div>
         </div>
 
-        <!-- CARD 2 -->
-        <div
-          class="backdrop-blur-xl bg-white/60 border border-white/50 shadow-md p-6 rounded-2xl transition-all duration-300 hover:shadow-xl hover:border-blue-300/60">
-          <h3 class="text-xl font-semibold mb-4 text-slate-900">UX Research & Strategy</h3>
-          <ul class="space-y-2 text-slate-600">
-            <li class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-blue-500"></span> User Research
-            </li>
-            <li class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-blue-500"></span> User Flows</li>
-            <li class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-blue-500"></span> User Personas
-            </li>
-            <li class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-blue-500"></span> Journey Mapping
-            </li>
-            <li class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-blue-500"></span> Heuristic
-              Evaluation
-            </li>
-            <li class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-blue-500"></span> Usability Testing
-            </li>
-          </ul>
+        <!-- CARD 2-->
+        <div class="relative rounded-2xl p-[1px] overflow-hidden">
+          <!-- SMOOTH ROTATING BORDER -->
+          <div class="absolute inset-0 rounded-2xl animate-rotate-smooth 
+                       bg-[radial-gradient(circle_at_center,_#3b82f6,_#a855f7)] opacity-70 blur-[10px]">
+          </div>
+          <!-- INNER CONTENT -->
+          <div class="relative rounded-2xl backdrop-blur-xl bg-white h-full p-6">
+            <h3 class="text-xl font-semibold mb-4 text-slate-900">UX Research & Strategy</h3>
+            <ul class="space-y-2 text-slate-600">
+              <li class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-blue-500"></span> User Research
+              </li>
+              <li class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-blue-500"></span> User Flows</li>
+              <li class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-blue-500"></span> User Personas
+              </li>
+              <li class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-blue-500"></span> Journey Mapping
+              </li>
+              <li class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-blue-500"></span> Heuristic
+                Evaluation
+              </li>
+              <li class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-blue-500"></span> Usability
+                Testing
+              </li>
+            </ul>
+          </div>
         </div>
 
-        <!-- CARD 3 -->
-        <div
-          class="backdrop-blur-xl bg-white/60 border border-white/50 shadow-md p-6 rounded-2xl transition-all duration-300 hover:shadow-xl hover:border-blue-300/60">
-          <h3 class="text-xl font-semibold mb-4 text-slate-900">Frontend & Responsive</h3>
-          <ul class="space-y-2 text-slate-600">
-            <li class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-blue-500"></span> HTML</li>
-            <li class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-blue-500"></span> CSS</li>
-            <li class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-blue-500"></span> Tailwind CSS</li>
-            <li class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-blue-500"></span> Bootstrap</li>
-            <li class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-blue-500"></span> Media Queries
-            </li>
-            <li class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-blue-500"></span> Responsive Design
-            </li>
-          </ul>
+        <!-- CARD 3-->
+        <div class="relative rounded-2xl p-[1px] overflow-hidden">
+          <!-- SMOOTH ROTATING BORDER -->
+          <div class="absolute inset-0 rounded-2xl animate-rotate-smooth 
+                       bg-[radial-gradient(circle_at_center,_#3b82f6,_#a855f7)] opacity-70 blur-[10px]">
+          </div>
+          <!-- INNER CONTENT -->
+          <div class="relative rounded-2xl backdrop-blur-xl bg-white/95 h-full p-6">
+            <h3 class="text-xl font-semibold mb-4 text-slate-900">Frontend & Responsive</h3>
+            <ul class="space-y-2 text-slate-600">
+              <li class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-blue-500"></span> HTML</li>
+              <li class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-blue-500"></span> CSS</li>
+              <li class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-blue-500"></span> Tailwind CSS
+              </li>
+              <li class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-blue-500"></span> Bootstrap</li>
+              <li class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-blue-500"></span> Media Queries
+              </li>
+              <li class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-blue-500"></span> Responsive
+                Design
+              </li>
+            </ul>
+          </div>
         </div>
 
-        <!-- CARD 4 -->
-        <div
-          class="backdrop-blur-xl bg-white/60 border border-white/50 shadow-md p-6 rounded-2xl transition-all duration-300 hover:shadow-xl hover:border-blue-300/60">
-          <h3 class="text-xl font-semibold mb-4 text-slate-900">UI/UX Design Skills</h3>
-          <ul class="space-y-2 text-slate-600">
-            <li class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-blue-500"></span> Wireframing</li>
-            <li class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-blue-500"></span> Prototyping</li>
-            <li class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-blue-500"></span> Smart Animate
-            </li>
-            <li class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-blue-500"></span> Component
-              Variants
-            </li>
-            <li class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-blue-500"></span> Interaction
-              Design
-            </li>
-            <li class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-blue-500"></span> Product Design
-            </li>
-
-          </ul>
+        <!-- CARD 4-->
+        <div class="relative rounded-2xl p-[1px] overflow-hidden">
+          <!-- SMOOTH ROTATING BORDER -->
+          <div class="absolute inset-0 rounded-2xl animate-rotate-smooth 
+                       bg-[radial-gradient(circle_at_center,_#3b82f6,_#a855f7)] opacity-70 blur-[10px]">
+          </div>
+          <!-- INNER CONTENT -->
+          <div class="relative rounded-2xl backdrop-blur-xl bg-white h-full p-6">
+            <h3 class="text-xl font-semibold mb-4 text-slate-900">UI/UX Design Skills</h3>
+            <ul class="space-y-2 text-slate-600">
+              <li class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-blue-500"></span> Wireframing
+              </li>
+              <li class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-blue-500"></span> Prototyping
+              </li>
+              <li class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-blue-500"></span> Smart Animate
+              </li>
+              <li class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-blue-500"></span> Component
+                Variants
+              </li>
+              <li class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-blue-500"></span> Interaction
+                Design
+              </li>
+              <li class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-blue-500"></span> Product Design
+              </li>
+            </ul>
+          </div>
         </div>
 
       </div>
     </div>
 
-    <h6 class="text-xl font-semibold mt-20 mb-4 text-slate-900 text-center">Other Interests</h6>
+    <h6 class="text-xl font-semibold mb-4 text-slate-900 text-center">Other Interests</h6>
 
     <div class="max-w-7xl mx-auto px-6 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-5">
       <!-- Item -->
@@ -815,6 +838,9 @@
   <!--numscroller-->
   <script src="plugins/numscroller-gh-pages/numscroller-1.0.js"></script>
 
+  <script src="js/app.js"></script>
+
+
 
   <script>
     $(document).ready(function () {
@@ -862,11 +888,6 @@
     });
   </script>
 
-  <script>
-    $(function () {
-      $('[data-toggle="tooltip"]').tooltip()
-    })
-  </script>
 
   <!-- Tailwind Apply Script -->
   <script>
