@@ -172,8 +172,8 @@
             Roy</span>
         </span>
 
-        <span class="block text-3xl mt-4">
-          UI/UX Designer
+        <span class="block text-3xl mt-4 h-10">
+          <span id="typewriter" class="typing"></span>
         </span>
       </h1>
 
@@ -250,7 +250,7 @@
     </div>
 
     <div class="px-6">
-      <div
+      <div id="counter-section"
         class="max-w-7xl mx-auto p-6 md:p-10 mt-10 rounded-3xl grid grid cols-1 md:grid-cols-3 md:gap-10 bg-white/50 backdrop-blur-xl border border-white/20 transition-all duration-300 ease-out">
 
         <!-- Floating Icon -->
@@ -261,7 +261,7 @@
           </div>
 
           <div class="ml-6 md:ml-10">
-            <h2
+            <h2 id="counter1"
               class="text-5xl inline-block mb-2 font-bold tracking-tight bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent text-slate-900">
               15
             </h2>
@@ -276,7 +276,7 @@
           </div>
 
           <div class="ml-6 md:ml-10">
-            <h2
+            <h2 id="counter2"
               class="text-5xl inline-block mb-2 font-bold tracking-tight bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent text-slate-900">
               7
             </h2>
@@ -292,7 +292,7 @@
           </div>
 
           <div class="ml-6 md:ml-10">
-            <h2
+            <h2 id="counter3"
               class="text-5xl inline-block mb-2 font-bold tracking-tight bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent text-slate-900">
               5
             </h2>
@@ -906,6 +906,77 @@
         "text-slate-700", "font-medium"
       );
     });
+  </script>
+
+
+  <script>
+    const words = [
+      "UI/UX Designer",
+      "Frontend Developer",
+      "Product Designer"
+    ];
+
+    let i = 0;
+    let j = 0;
+    let isDeleting = false;
+    let speed = 120;
+
+    function typeEffect() {
+      const current = words[i];
+      const display = document.getElementById("typewriter");
+
+      if (isDeleting) {
+        display.textContent = current.substring(0, j--);
+        speed = 60;
+        if (j < 0) {
+          isDeleting = false;
+          i = (i + 1) % words.length;
+        }
+      } else {
+        display.textContent = current.substring(0, j++);
+        speed = 120;
+        if (j > current.length) {
+          isDeleting = true;
+          speed = 1000;
+        }
+      }
+      setTimeout(typeEffect, speed);
+    }
+
+    typeEffect();
+  </script>
+
+
+  <script>
+    function counterAnimation(id, start, end, duration) {
+      const el = document.getElementById(id);
+      let current = start;
+      const range = end - start;
+      const increment = end > start ? 1 : -1;
+      const stepTime = Math.abs(Math.floor(duration / range));
+
+      const timer = setInterval(() => {
+        current += increment;
+        el.textContent = current;
+
+        if (current === end) clearInterval(timer);
+      }, stepTime);
+    }
+
+    const section = document.getElementById("counter-section");
+    let started = false; // prevents re-trigger
+
+    const observer = new IntersectionObserver((entries) => {
+      if (entries[0].isIntersecting && !started) {
+        started = true;
+
+        counterAnimation("counter1", 0, 15, 1500);
+        counterAnimation("counter2", 0, 7, 1500);
+        counterAnimation("counter3", 0, 5, 1500);
+      }
+    }, { threshold: 0.3 }); // 30% visible
+
+    observer.observe(section);
   </script>
 
 
